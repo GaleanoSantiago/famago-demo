@@ -1,0 +1,897 @@
+/*  
+/////////////////////////////////////
+/////Estilos Creados por Galeano/////
+/////////////////////////////////////
+/////////////////////////////////////
+*/
+
+/* -------------------------------- General -------------------------------------- */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning:#ffc107;
+    --bs-danger:#dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --z1:#232741;
+    --z2:#2c2e43;
+    --darkBodyP:#181818;
+    --darkPretty: #333;
+    --darkPretty2:#222;
+    --yellowMostaza: #e8a900;
+    --bg-whiteBlue:#F0F0F0;
+    --bg-whiteSmooth:#FAFAFA;
+    --azulWhite: #f2f6fc;
+    --azulLight: #f6f8fc;
+    --azulLite: #eaf1fb;
+    --aL: #f5f6f7
+}
+
+
+body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    font-family:'Euclid Circular A', sans-serif !important; /*Nueva fuente de letra*/
+    scroll-behavior: smooth;          
+    background-color:var(--bg-whiteSmooth);  
+    /* background: rgb(250,250,250);
+background: linear-gradient(90deg, rgba(250,250,250,1) 37%, rgba(234,241,251,1) 96%); */
+    /* background:url(../images/cc.webp);
+    background-attachment: fixed;
+    background-size:cover; */
+}
+#contacto{
+    background-color:var(--bg-whiteSmooth);
+    /* background: rgb(250,250,250);
+background: linear-gradient(90deg, rgba(250,250,250,1) 37%, rgba(234,241,251,1) 96%); */
+    /* background:url(../images/cc.webp);
+    background-attachment: fixed;
+    background-size:cover; */
+}                       
+
+.text-gray{
+    color:var(--bs-gray-500);
+}
+/* .fadein {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .fadein.lazyloaded {
+    opacity: 1;
+  } */
+
+
+/* -------------------------------- Modal -------------------------------------- */
+
+.modal-content{
+    background-color:var(--darkBodyP);
+}
+
+/* -------------------------------- Inicio -------------------------------------- */
+
+
+#inicio{
+    height:600px;
+}
+
+
+/* ------------ Slider ------------ */
+.card-carousel{
+
+    background-repeat: repeat; 
+    height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.text-carousel{
+    width:60vw;
+    text-align: center;
+
+}
+
+.text-carousel h1, .text-carousel h2{
+    font-size:calc(1.575rem + 3.9vw);
+    font-weight: 700 !important;
+    line-height: 1.2;
+    color:var(--bs-light);
+    /* padding:0; */
+}
+.text-carousel h3, .h2-textcarousel{
+    font-size:calc(.575rem + 1.9vw) !important;
+    font-weight: 700 !important;
+    /* line-height: 1.2; */
+    color:var(--bs-light);
+}
+
+.btn-link{
+    width:200px;
+    margin:auto;
+    text-decoration:none !important;
+}
+
+.btn-contacto{
+    padding: 16px 14px;
+    border:none;
+    background:var(--bs-warning);
+    border-radius:50px;
+    font-weight:700 !important;
+    width:200px;    
+    transition: all .4s;
+    color:#111;
+}
+
+.btn-contacto:hover{
+    background: #111;
+    color:var(--bs-warning);
+    transition: all .4s;
+}
+
+.ci-1{
+    background:linear-gradient(rgba(5,7,8, 0.5), rgba(5, 7, 8, 0.5)), url(../images/slider/slider_img2.webp);
+    background-position: bottom;
+}
+.ci-2{
+    background:linear-gradient(rgba(5,7,8, 0.5), rgba(5,7,8, 0.5)), url(../images/slider/bricks.webp);
+    background-position: 90% 10%;
+}
+.ci-3{
+    background:linear-gradient(rgba(5,7,8, 0.5), rgba(5,7,8, 0.5)), url(../images/slider/construccion_site.webp);
+    background-size: cover;
+    background-position:0 50%;
+}
+
+/* --------------------------------Navbar-------------------------------------- */
+
+.gem-contacts-item.gem-contacts-phone li{
+    list-style:none;
+    font-weight:600;
+    font-size:15px;
+}
+
+.gem-contacts-item.gem-contacts-phone ul{
+    text-align:center;
+    display:flex;
+    justify-content: space-between;
+}
+.gem-contacts-item.gem-contacts-phone span:first-child{
+    font-size:20px;
+    transition:color .4s !important;
+
+}
+
+.gem-contacts-item.gem-contacts-phone a:hover i{
+    transition:color .3s !important;
+}
+.gem-contacts-item.gem-contacts-phone a:hover span{
+    transition:color .3s !important;
+}
+
+
+
+.socials .inline-inside{
+    display:flex;
+    align-items:center;
+
+}
+
+
+.header-top{
+    width:100%;
+    height:40px;
+    background:#151515;
+}
+
+.lis-top{
+    display:none;
+}
+
+nav{
+    background-color: var(--darkBodyP);
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.17'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fdfbfe' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+    
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    z-index:99;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+	transition: all .5s;
+}
+.logo-header img{
+    width: 50px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li{
+    margin-right: 4rem;
+    list-style:none;
+}
+
+.nav-menu li:hover a{
+    transition: all .3s;
+}
+
+.nav-menu a{
+    color: #fff;
+    font-weight:600;
+}
+.nav-menu .btn-contacto{
+    background:#4ad295;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.btn-contacto:hover{
+    transform:scale(1.03);
+}
+.btn-contacto:hover a{
+    color:#fff !important;
+}
+.menu-icon{
+    border:1px solid var(--bs-secondary);
+    border-radius: 3px;
+    padding:6px;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+
+
+/* Para poner fixed en js */
+
+
+nav.fixed#menu {
+    animation: popDown 0.5s;
+}
+
+
+nav.fixed {
+    bottom: inherit;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width:100%;
+    /* z-index: 3; Quitar mas tarde si hace falta */
+}
+
+@keyframes popDown {
+    0% {
+      transform: translateY(-100px);
+    }
+  }
+
+.active-item{           /*Para utilizar en js*/
+    color:var(--bs-warning) !important;
+}
+
+
+
+/* --------------------------------Seccion de Nosotros-------------------------------------- */
+
+.no-padding-bottom {
+    padding-top: 0;
+}
+
+
+/* -------------------------------- Seccion de Productos -------------------------------------- */
+
+#productos{
+
+    /* fondo de lineas curvas bottom-right */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1007%26quot%3b)' fill='none'%3e%3cpath d='M365.62 1050.33C534.61 1036.25 593.76 730.66 942.24 693.12 1290.71 655.58 1339.14 277.28 1518.85 253.12' stroke='rgba(255%2c 193%2c 7%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M151.6 1143.69C359.31 1120.21 445.51 685.76 834.62 661.43 1223.72 637.1 1334.08 396.27 1517.63 391.43' stroke='rgba(255%2c 193%2c 7%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M254.67 1139.16C507.27 1001.87 501.51 182.03 848.08 154.1 1194.64 126.17 1279.61 408.48 1441.48 414.1' stroke='rgba(255%2c 193%2c 7%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M551.13 1160.5C704.06 1092.37 635.61 611.68 930.83 608.89 1226.05 606.1 1491.14 846.06 1690.23 848.89' stroke='rgba(255%2c 193%2c 7%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M708.81 1079.23C885.32 970.61 809.9 453.53 1109.14 353.3 1408.38 253.07 1391.9 113.29 1509.47 103.3' stroke='rgba(255%2c 193%2c 7%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1007'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+}
+
+.section-title h3{
+    text-align:center;
+}
+
+.cards-productos{
+
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:0;
+    border-radius:10px;
+    overflow:hidden;        /*Para que el contorno este por encima del contenido*/
+    box-shadow:
+    0px 0px 1.4px rgba(0, 0, 0, 0.08),
+    0px 0px 3.9px rgba(0, 0, 0, 0.115),
+    0px 0px 9.3px rgba(0, 0, 0, 0.15),
+    0px 0px 31px rgba(0, 0, 0, 0.23)
+    ;
+}
+
+.img-prod{
+    height:350px;
+    padding:0;  
+}
+
+.prod-1{
+    background:url(../images/materiales.webp);
+    background-size: cover;
+    height:100%;   
+    width:100%;   
+}
+.prod-2{
+    background:url(../images/slider/construccion_site2.webp);
+    background-size: cover;
+    background-position:center;
+    height:100%;   
+    width:100%;   
+}
+.prod-3{
+    background:url(../images/truck.webp);
+    background-size: cover;
+    background-position: 20% 0;
+    height:100%;   
+    width:100%;   
+}
+
+.desc-prod{
+    height:350px;
+    background:var(--darkBodyP);
+    color:var(--bs-light);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:10px 15px;
+}
+
+.desc-prod h3{
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 500;
+    text-align: center;
+}
+
+.desc-prod p{
+    color:var(--bs-gray-500);
+    font-weight:400;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 575px){
+
+    .img-prod{
+        height:180px;
+    }
+    .desc-prod{
+        height:auto;
+        padding:20px 15px;
+    }
+}
+
+/* -------------------------------- Seccion de Alcance -------------------------------------- */
+
+.section-alcance{
+    background:var(--darkBodyP);
+}
+
+.mapaJS{
+    background: var(--darkPretty2);
+    border:1px solid var(--bs-light);
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    overflow:hidden;            /*Para que el contorno este por encima del contenido*/
+}
+.mapaJS h4{
+    color:var(--bs-light);
+}
+/* .mapaJS img{
+    width:100%;
+} */
+.desc-mapaJS{
+    padding:12px 6px;   /*padding para que el efecto glass de los mapas sean del mismo alto*/
+}
+.desc-mapaJS>p{
+    color:var(--bs-gray-500) !important;
+    text-align:justify;
+}
+
+/* #paraguay{
+    margin-bottom:12px;
+} */
+
+/* -------------------------------- Seccion de Contacto -------------------------------------- */
+
+/* ---Estilos Temporales---- */
+
+.info-content p{
+    color:var(--bs-secondary);
+}
+
+.contact_form .form-control{
+    border-bottom: 2px solid var(--bs-secondary);
+    background-color:transparent;
+}
+input::placeholder,textarea::placeholder{
+    font-family:monospace;
+    color:var(--bs-secondary) !important;
+    /* transition:color 0.3s; */
+
+}
+.button-form{
+    padding: 16px 32px;
+}
+
+
+
+/* -------------------------------- Seccion de Footer -------------------------------------- */
+
+.dmtop{
+    z-index:3;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+}
+
+#footer{
+    background-image:url(../images/footer-img.webp);
+}
+
+.footer-link{
+    color:var(--bs-light);
+}
+
+.clearfix .text{
+    margin-left:3px;
+}
+
+/* ---------------------------------------- Catalogo de productos ---------------------------------------- */
+
+.col-prod{
+    display:flex;
+    justify-content: center;
+    border:1px solid var(--bs-gray-500);
+    padding:20px 10px;
+}
+
+.card-prod{
+    border-radius:10px;
+    border:1px solid var(--bs-secondary);
+    transition:all .3s ease-in;
+    width:100%;
+    /* height:500px; */
+}
+.card-prod:hover,
+.card-prod:focus{
+    transform:translateY(-10px);
+    transition:all .3s ease-in;
+}
+
+.cont-img-prod{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    background:var(--darkBodyP);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.img-producto{
+    width:100%;
+    height:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition:all .3s ease-in;
+}
+
+.card-prod:hover .img-producto,
+.card-prod:focus .img-producto{
+    transform:scale(1.05);
+    transition:all .3s ease-in;
+}
+
+.img-producto>img{
+    width:100%;
+}
+.prd-0{
+    /* background:url(../images/pro2.webp); */
+    background-size:cover;
+    background-position:center;
+}
+.prd-1{
+    /* background:url(../images/pro3.webp); */
+    background-size:cover;
+    background-position:center;
+}
+.prd-2{
+    /* background:url(../images/pro4.webp); */
+    background-size:cover;
+    background-position:center;
+}
+.prd-3{
+    /* background:url(../images/truck.webp); */
+    background-size:cover;
+    background-position:center;
+}
+.prd-4{
+    /* background:url(../images/pipers.jpg); */
+    background-size:cover;
+    background-position:center;
+}
+
+/* .cont-card-body{
+    display:flex;
+    
+} */
+
+.card-body{
+    padding:20px 10px;
+    text-align: justify;
+    background:var(--bs-white);
+    border-radius:10px;
+    min-height:150px
+}
+
+.titulo-card-prod{
+    text-align:center;
+
+}
+
+.card-footer{
+    padding:10px 0;
+    margin-bottom:0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+/* -------------------------------- Seccion de Responsive -------------------------------------- */
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+    /* --------------------------- Inicio ---------------------------- */
+    .ci-1{
+        background-position: 50% 70%;
+        background-size: cover;
+    }
+    .ci-2{
+        background-position: 90% 10%;
+        background-size:cover;
+    
+    }
+    .ci-3{
+        background-size: cover;
+    }
+
+    /* --------------------------- Productos ---------------------------- */
+
+    .prod-1{
+        background-size: cover;
+    }
+    .prod-2{
+        background-size: cover;
+        background-position:60% 0;
+    }
+    .prod-3{
+        background-size: cover;
+        background-position: 20% 0;
+    }
+ }
+
+
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /* --------------------------- Inicio ---------------------------- */
+
+    .ci-1{
+        background-position: 50% 70%;
+        background-size: cover;
+    }
+    .ci-2{
+        background-size:cover;
+    }
+    .ci-3{
+        background-position: center;
+        background-size:cover;
+    }
+
+    /* --------------------------- Productos ---------------------------- */
+    .img-prod{
+        height:370px;
+    }
+    .desc-prod{
+        height:370px;
+        padding:15px 15px;
+    }
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+/* --------------------------- Navbar ---------------------------- */
+    .gem-contacts-item.gem-contacts-phone i{
+        display:none;
+    }
+    .info-th{
+        font-size:.8rem;
+    }
+/* --------------------------- Inicio ---------------------------- */
+
+    .ci-1{
+        /* background-position: 50% 70%; */
+        background-size: cover;
+    }
+    .ci-2{
+        background-size:cover;
+    }
+    .ci-3{
+        background-position: center;
+        background-size:cover;
+    }
+
+    /* --------------------------- Productos ---------------------------- */
+
+    .prod-2{
+        background-size: cover;
+        background-position:70% 0;
+    }
+
+    /* --------------------------- Alcance ---------------------------- */
+
+    .mapaJS img{
+        width:200%;
+    }
+
+}
+
+
+/* ---------------Mediaqueries pára Navbar en pantallas menores a 769px--------------- */
+@media (max-width:768px){
+
+ /* --------------------------- Inicio ---------------------------- */
+
+    .ci-1{
+        /* background-position: 50% 70%; */
+        background-size: cover;
+    }
+    .ci-2{
+        background-size:cover;
+    }
+    .ci-3{
+        background-position: center;
+        background-size:cover;
+    }
+
+ /* --------------------------- Navbar ---------------------------- */
+    .gem-contacts-item.gem-contacts-phone i{
+        display:none;
+    }
+    .col-xs-hidden{
+        display:none;
+    }
+    .lis-top{
+        width:300px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .lis-top span{
+        color:var(--bs-secondary);
+        font-size: 1.5rem;
+        transition: color .8s;
+    }
+    .lis-top span:hover{
+        color:var(--bs-warning);
+        transition: color .8s;
+    }
+
+    nav{
+        height:60px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        /* width:50%; */
+        display: block;
+        /* position: fixed; */
+        /* top: 10px; */
+        /* right: 20px; */
+        cursor: pointer;
+        margin-right:10px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fdfbfe' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top:60px;
+        left:-100%;
+        /* transform:translateY(-500px); */
+        background: var(--darkBodyP);
+        /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fdfbfe' fill-opacity='0.22' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+
+        width: 100%;
+        height: 100vh;
+        /* min-height:500px; */
+        /* right: 0; */
+        transition: all .25s;
+        box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+        padding-left:0;
+        /* z-index:80 !important; */
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-size:1.3rem;
+      
+
+    }
+    .ul-li-hrztl{
+        padding: .5rem !important;
+    }
+    /* .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    } */
+    #check:checked ~ ul{
+        left:0;
+        transition: all .25s;
+
+    }
+
+
+
+
+   /* ---------------Footer--------------- */
+
+   #footer{
+    background-size:cover;
+    }
+
+
+
+    /* a:hover{
+        background-color:var(--bs-danger) !important;
+    } */
+
+
+}
+
+
+
+
+
+
+
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+/* ---------------Navbar--------------- */
+    
+}
+
+/*Celulares*/
+@media only screen and (max-width: 575px){
+/* ---------------General--------------- */
+    p{
+        font-size:14px;
+    }
+    
+/* ---------------Navbar--------------- */
+    
+    .lis-top{
+        width:200px;
+    }
+
+    /* --------------------------- Productos ---------------------------- */
+
+    .img-prod{
+        height:200px;
+        /* padding:0;    */
+    }
+    .prod-1{
+        background-size: cover;
+        background-position: 50% 75%;
+    }
+    .prod-2{
+        background-size: cover;
+        background-position:70% 35%;
+    }
+    .prod-3{
+        background-size: cover;
+        background-position: 10% 50%;
+    }
+
+    /* --------------------------- Alcance ---------------------------- */
+
+    .mapaJS img{
+        width:200%;
+    }
+
+/* ---------------------------------------- Catalogo de productos ---------------------------------------- */
+
+
+    .card-prod{
+        width:350px;
+    }
+
+}
+
+/*Celulares angostos*/
+@media only screen and (max-width:365px){
+
+    .lis-top{
+        width:200px;
+    }
+
+/* ---------------Inicio--------------- */
+
+    .ci-1{
+        background-position: 10% 60%;
+        background-size:cover;
+    }
+    .ci-2{
+        background-size:cover;
+    }
+    .ci-3{
+        background-position: center;
+        background-size:cover;
+    }
+
+    .text-carousel{
+        width:80vw;    
+    }
+
+
+
+/* ---------------Footer--------------- */
+
+    #footer{
+        background-size:cover;
+    }
+    
+
+
+/* ---------------------------------------- Catalogo de productos ---------------------------------------- */
+
+    .card-prod{
+        width:100%;
+    }
+
+
+}
+
+
+

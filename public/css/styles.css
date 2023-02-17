@@ -1,0 +1,491 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning:#ffc107;
+    --bs-danger:#dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --z1:#232741;
+    --z2:#2c2e43;
+    --darkBodyP:#181818;
+    --darkPretty: #333;
+    --darkPretty2:#222;
+    --yellowMostaza: #e8a900;
+    --bg-whiteBlue:#F0F0F0;
+    --bg-whiteSmooth:#FAFAFA;
+    --azulWhite: #f2f6fc;
+    --azulLight: #f6f8fc;
+    --azulLite: #eaf1fb;
+    --aL: #f5f6f7;
+    
+    --borders-light:#dbdbdb;
+    --lightBlue:#03a9f4;
+
+    /* Colores de whatsapp: */
+    --wa-1: #005c4b;
+    --wa-2: #44c554;
+    --wa-3: #128c7e;
+
+    /* Colores de famago */
+    --naranjaFamago:#f18e00;
+    --azulFamago:#003480;
+    --lightFamago:#f1f1f1;
+
+    --fa-1:#f18e00;
+    --fa-2:#003480;
+    --fa-3:#f1f1f1;
+
+    --fa-1-1:#f5a22e;
+    --gameLips:#be123c;
+}
+
+body{
+    max-width: 100% !important;
+    /* overflow-x: hidden !important; */
+    scroll-behavior: smooth;          
+    background-color:var(--fa-3);  
+    height:1000vh;
+}
+
+section{
+    padding:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+
+/* ------------------------- NavBar ----------------------------- */
+
+#menubar{
+    min-height:80px;
+    background-color:var(--fa-1);
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    z-index:99;
+}
+#menubar li a{
+    color:var(--fa-3);
+    font-size:1.3rem;
+}
+#menubar ul li{
+    margin-right:40px;
+}
+.dropdown-menu{
+    background-color:var(--fa-1);
+    transition: all .4s ease;
+}
+.dropdown-menu a:hover{
+    background-color:var(--fa-1-1);
+    transition: all .4s ease;
+
+}
+/* ------------------------- seccion ofertas ----------------------------- */
+
+.section-ofertas{
+    margin-top:90px;
+    height:500px;
+    background-image: url(../img/oferta.jpg);
+    background-position:center;
+    /* background-size:50%; */
+    /* background-repeat:no-repeat; */
+}
+
+.section-ofertas .col-12{
+    display:flex;
+    align-items:center;
+    height:400px;
+}
+.text-oferta{
+    /* background: rgba(0, 52, 128, 0.52);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 52, 128, 0.26); */
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    padding:30px 20px;
+}
+.text-oferta h4{
+    color:var(--gameLips);
+    font-size:2.5rem;
+    font-weight:700;
+    /* background-color:var(--bs-danger); */
+    border-radius:20px;
+    /* -webkit-text-stroke: 1px #181818; */
+}
+.text-oferta h3{
+    color:var(--fa-2);
+    font-size:2.6rem;
+    font-weight:700;
+
+}
+.text-oferta span{
+    color:var(--bs-warning);
+    font-size:1.2rem;
+    font-weight: 700;
+}
+/* ------------------------- Seccion de productos ----------------------------- */
+
+.product-title{
+    display:flex;
+    justify-content:space-between;
+}
+.product-title a{
+    color:var(--fa-1);
+    text-decoration:none;
+    transition: color .4s ease;
+
+}
+.product-title a{
+    color:var(--fa-1-1);
+    transition: color .4s ease;
+}
+section .items{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+section .items span{
+    /* list-style: none; */
+    background:#eee;
+    padding:12px 20px;
+    margin:5px;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:background .4s ease;
+
+}
+section .items span:hover{
+    background:var(--borders-light);
+    transition:background .4s ease;
+}
+
+section .items span.active{
+    background:var(--fa-1);
+    transition:background .4s ease;
+    color:var(--bs-light);
+}
+
+.product{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.product-title{
+    width:100%;
+}
+
+.product .itemBox{
+    position:relative;
+    width:250px;
+    height:400px;
+    margin:10px;
+    display:block;
+    transition:all .4s;
+    overflow:hidden;
+    border-radius:6px;
+    border:1px solid var(--borders-light);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    
+}
+.product .itemBox:hover{
+    transform:scale(1.02);
+    transition:all .4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.product .itemBox.hide{
+    display:none;
+    transition:all .4s;
+}
+
+.product .itemBox .image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* object-fit:cover; */
+    background:var(--bs-white);
+    border-radius:6px;
+    
+
+}
+
+.image h3{
+    color:#181818;
+}
+
+.product .itemBox .image .imgs {
+    overflow:hidden;
+    width:100%;
+    height:70%;
+}
+.imgs img{
+    width:100%;
+    height:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position: center;
+    transition:all .4s ease;
+
+}
+.product .itemBox:hover .imgs img{
+    transform:scale(1.07);
+    transition:all .4s ease;
+}
+
+.product .itemBox .image .image-body{
+    padding:10px 5px;
+    height:30%;
+
+} 
+
+.image-body h5,h4{
+    text-align: center;
+}
+
+.btns{
+    position:absolute;
+    bottom:10px;    
+}
+
+.btn-prod{
+    width:150px !important;
+    padding:8px;
+    background:var(--fa-1);
+    color:var(--bs-light);
+    font-weight: 700;
+    border:none;
+    border-radius:5px;
+    transition: all .4s ease;
+    text-decoration:none;
+
+}
+
+.btn-prod:hover{
+    background:#f5a22e;
+    transition: all .4s ease;
+    color:var(--bs-light);
+}
+
+.precio_tachado{
+    text-decoration:line-through;
+}
+
+.btns span{
+    color:var(--fa-2);
+    font-weight:600;
+    /* font-size:1rem; */
+}
+.descuento span{
+    color:var(--gameLips);    
+}
+
+/* ----------------------------- VerProducto.php ------------------------------- */
+
+.section-ver-producto{
+    margin-top:80px;
+}
+
+.contenedor-producto{
+    background-color: var(--bs-white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+.contenedor-img-prod{
+    overflow:hidden;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.contenedor-img-prod img{
+    width:100%;
+}
+
+.desc-prod, .footer-prod{
+    padding:30px 20px;
+}
+
+.desc-prod p{
+    margin-top:50px;
+    font-size:1.1rem;
+}
+.footer-prod p{
+    font-size:1.7rem;
+
+}
+.footer-prod p>span{
+    color:var(--fa-2);
+    font-weight: 700;
+}
+.footer-prod p>span:first-child{
+    text-decoration:line-through;
+}
+
+/* ----------------------------- catalogo-productos.html ------------------------------- */
+
+.section-catalogo{
+    margin-top:80px;
+}
+
+/* ----------------------------- Modal ------------------------------- */
+/* .modal-title{
+    color:var(--bs-light);
+}
+.btn-close{
+    background-color:var(--bs-light);
+} */
+
+.modal-content{
+    background-color:var(--bs-light);
+}
+
+/* .modal-img{
+    overflow:hidden;
+} */
+.cont-modal-img{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.cont-modal-img img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position: center;
+}
+
+.modal-desc{
+    /* height:100%; */
+    padding:20px;
+}
+
+.btn-wa{
+    padding:10px 40px;
+    /* width:150px; */
+    background:#25d366;
+    color:var(--bs-light);
+    font-weight: bold;
+    border-radius:10px;
+    font-size:1.3rem;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:all .4s ease;
+    border:none;
+    text-decoration:none;
+}
+.btn-wa span:first-child{
+    font-size:35px;
+}
+
+.btn-wa:hover{
+    background:#128c7e;
+    color:var(--bs-light);
+    transition:all .4s ease;
+
+}
+
+
+
+/* -------------------------------- Seccion de Responsive -------------------------------------- */
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+/* ----------------------------- Modal ------------------------------- */
+
+    .cont-modal-img{
+        width:70%;
+        height:250px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+}
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+        height:250px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+}
+
+/*Celulares*/
+@media only screen and (max-width: 575px){
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:50%;
+        height:200px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:475px){
+
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+    }
+}
+
+/*Celulares angostos*/
+@media only screen and (max-width:365px){
+    .product .itemBox{
+        width:300px;
+        height:300px;
+        overflow:auto;
+    }
+    .btn-prod{
+        width:150px;
+        padding:4px;
+    
+    }
+
+    .product .itemBox .image .image-body{
+        padding:5px;
+    }
+
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+    }
+}
