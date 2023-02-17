@@ -448,6 +448,12 @@ section .items span.active{
     .cont-modal-img img{
         width:100%;
     }
+/* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:80%;
+    }
+    
 }
 /* Tablets y phablets */
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -485,6 +491,29 @@ section .items span.active{
     /* .prod-oferta img{
         width:50%;
     } */
+
+
+    /* ----------------------------- verProducto.html ------------------------------- */
+    .contenedor-img-prod{
+        height:auto;
+    }
+    .contenedor-img-prod img{
+        width:50%;
+    }
+    .desc-prod{
+        padding:15px;
+    }
+    .footer-prod{
+        padding:15px;
+    }
+    .desc-prod p{
+        margin-top:0;
+        font-size:1.1rem;
+    }
+    .footer-prod p{
+        font-size:1.7rem;
+    
+    }
 
 }
 
@@ -528,6 +557,30 @@ section .items span.active{
     .cont-prod-oferta{
         justify-content:center;
     }
+
+    
+    /* ----------------------------- verProducto.html ------------------------------- */
+    .contenedor-img-prod{
+        height:auto;
+    }
+    .contenedor-img-prod img{
+        width:50%;
+    }
+    .desc-prod{
+        height:auto;
+        padding:15px;
+    }
+    .footer-prod{
+        padding:15px;
+    }
+    .desc-prod p{
+        margin-top:0;
+        font-size:1rem;
+    }
+    .footer-prod p{
+        font-size:1.4rem;
+    
+    }
 }
 
 @media only screen and (max-width:475px){
@@ -535,6 +588,11 @@ section .items span.active{
 /* ----------------------------- Modal ------------------------------- */
     .cont-modal-img{
         width:70%;
+    }
+     /* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:60%;
     }
 }
 
@@ -557,6 +615,12 @@ section .items span.active{
 
 /* ----------------------------- Modal ------------------------------- */
     .cont-modal-img{
+        width:70%;
+    }
+
+    /* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
         width:70%;
     }
 }
