@@ -60,7 +60,7 @@ body{
     height:1000vh;
 }
 
-section{
+/* section{
     padding:20px;
     width:100%;
     display:flex;
@@ -68,8 +68,10 @@ section{
     align-items:center;
     flex-direction: column;
     margin: 40px auto;
+} */
+section{
+    padding:40px 0;
 }
-
 
 /* ------------------------- NavBar ----------------------------- */
 
@@ -85,9 +87,13 @@ section{
 #menubar li a{
     color:var(--fa-3);
     font-size:1.3rem;
+    font-weight: 600;
 }
 #menubar ul li{
-    margin-right:40px;
+    margin-left:50px;
+}
+.text-fa-2{
+    color:var(--fa-2) !important;
 }
 .dropdown-menu{
     background-color:var(--fa-1);
@@ -98,48 +104,46 @@ section{
     transition: all .4s ease;
 
 }
-/* ------------------------- seccion ofertas ----------------------------- */
+/* ------------------------- Header Ofertas ----------------------------- */
 
 .section-ofertas{
     margin-top:90px;
-    height:500px;
-    background-image: url(../img/oferta.jpg);
-    background-position:center;
-    /* background-size:50%; */
-    /* background-repeat:no-repeat; */
+    min-height:500px;
+    background-color:var(--bs-white);
+    display:flex;
+    align-items: center;
 }
 
-.section-ofertas .col-12{
+.cont-text-oferta{
     display:flex;
-    align-items:center;
+    align-items:start;
+    justify-content:end;
     height:400px;
 }
+.cont-prod-oferta{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+}
+.prod-oferta img{
+    width:100%;
+}
 .text-oferta{
-    /* background: rgba(0, 52, 128, 0.52);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 52, 128, 0.26); */
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
     padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 .text-oferta h4{
     color:var(--gameLips);
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight:700;
     /* background-color:var(--bs-danger); */
     border-radius:20px;
-    /* -webkit-text-stroke: 1px #181818; */
 }
 .text-oferta h3{
     color:var(--fa-2);
-    font-size:2.6rem;
+    font-size:2.2rem;
     font-weight:700;
 
 }
@@ -148,6 +152,18 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     font-size:1.2rem;
     font-weight: 700;
 }
+.text-oferta a{
+    align-self: end;
+}
+.btn-oferta{
+    margin-top:20px;
+    width:300px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 /* ------------------------- Seccion de productos ----------------------------- */
 
 .product-title{
@@ -444,6 +460,32 @@ section .items span.active{
     .cont-modal-img img{
         width:100%;
     }
+
+/* ----------------------------- Index.html ------------------------------- */
+    .cont-text-oferta{
+        padding:0;
+        height:auto;
+        justify-content:center;
+    }
+    .text-oferta{
+        justify-content: center;
+    }
+    .text-oferta h4{
+        font-size:1.1rem;
+    }
+    .text-oferta h3{
+        font-size:1.3rem;
+    }
+    .text-oferta a{
+        align-self: center;
+    }
+    .cont-prod-oferta{
+        justify-content:center;
+    }
+    /* .prod-oferta img{
+        width:50%;
+    } */
+
 }
 
 /*Celulares*/
@@ -456,6 +498,35 @@ section .items span.active{
     }
     .cont-modal-img img{
         width:100%;
+    }
+
+
+    /* ----------------------------- Index.html ------------------------------- */
+    .cont-text-oferta{
+        padding:0;
+        height:auto;
+        justify-content:center;
+    }
+    .text-oferta{
+        justify-content: center;
+        padding-bottom:0;
+        /* padding:0; */
+    }
+    .text-oferta h4{
+        font-size:1.1rem;
+    }
+    .text-oferta h3{
+        font-size:1.3rem;
+    }
+    .text-oferta span{
+        font-size:1rem;
+
+    }
+    .text-oferta a{
+        align-self: center;
+    }
+    .cont-prod-oferta{
+        justify-content:center;
     }
 }
 
