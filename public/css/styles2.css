@@ -227,7 +227,7 @@ section{
     font-weight: 800;
     /* font-size:calc(1rem + 3.9vw); */
     /* color:var(--gameLips); */
-    animation: cambia-color 2s ease-in-out infinite;
+    animation: cambia-color 1.3s ease-in-out infinite;
 }
 @keyframes cambia-color {
     0% {
@@ -254,6 +254,7 @@ section{
 .card-text-oferta>p>span{
     color:var(--fa-2);
     font-size:1.3em;
+    font-weight: 700;
 }
 .card-text-oferta>p{
     text-align: center;
@@ -499,8 +500,8 @@ section .items span.active{
 
 .btns span{
     color:var(--fa-2);
-    font-weight:600;
-    /* font-size:1rem; */
+    font-weight:700;
+    font-size:1.2em;
 }
 .descuento span{
     color:var(--gameLips);    
@@ -513,7 +514,9 @@ section .items span.active{
     transform:translateX(10px); 
 }
 
-
+.col-precios-cards{
+    text-align: center;
+}
 .col-btns-cards{
     display:flex;
     flex-direction: column;
@@ -701,9 +704,9 @@ section .items span.active{
         margin:5px;
         overflow:hidden;
     }
-    .col-precios-cards{
+    /* .col-precios-cards{
         transform:translateX(-10px);
-    }
+    } */
 /* ----------------------------- Modal ------------------------------- */
     .cont-modal-img{
         width:70%;
@@ -797,9 +800,6 @@ section .items span.active{
         height:430px;
         margin:5px;
         overflow:hidden;
-    }
-    .col-precios-cards{
-        text-align:center;
     }
 /* ----------------------------- Modal ------------------------------- */
     .cont-modal-img{
@@ -954,17 +954,14 @@ section .items span.active{
 
     }
     .col-precios-cards{
-        /* width:100%; */
-        transform:translateX(0);
-        font-size:.8em;
-        text-align:start;
-
+        font-size: .85em;
+        /* text-align:start; */
     }
     .col-precios-cards span{
-        font-weight:700;
+        font-weight: 700;
+        /* font-size:1.1em; */
+
     }
-
-
 /* ----------------------------- inicio catalogo ------------------------------- */
 
     .items .list{
@@ -1090,7 +1087,6 @@ section .items span.active{
         /* width:100%; */
         transform:translateX(0);
         font-size:.85em;
-        text-align:start;
 
     }
     .col-btns-cards a{
