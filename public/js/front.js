@@ -92,7 +92,7 @@ const crearGloboOferta = (maxProd)=>{
     </div>
     <div class="cont-prod-oferta col-6 ">
       <div class="prod-oferta">                            
-        <img src="../../public/img/${maxProd.cimg_prod}" class="" alt="">
+        <img src="./public/img/${maxProd.cimg_prod}" class="" alt="">
       </div>
     </div>
           `;
