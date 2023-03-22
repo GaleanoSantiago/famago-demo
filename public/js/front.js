@@ -121,7 +121,7 @@ const crearItemBoxs = (productosEnOferta)=>{
                     </div>` : ``}
                   
                     <div class="imgs">
-                        <img src="../../public/img/${prod.cimg_prod}" alt="">
+                        <img src="./public/img/${prod.cimg_prod}" alt="">
                     </div>
                     <div class="image-body">
                         <h6>${prod.cnombre_producto}</h6>
