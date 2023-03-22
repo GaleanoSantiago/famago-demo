@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 // Funcion para obtener productos
 const obtenerProductos = async () => {
   // Es una petición GET, no necesitamos indicar el método ni el cuerpo
-  const respuestaRaw = await fetch("./productos.json");
+  const respuestaRaw = await fetch("../../view/frontend/obtener_productos.php");
   const productos = await respuestaRaw.json();
   // console.log(productos);
 
@@ -92,7 +92,7 @@ const crearGloboOferta = (maxProd)=>{
     </div>
     <div class="cont-prod-oferta col-6 ">
       <div class="prod-oferta">                            
-        <img src="./public/img/${maxProd.cimg_prod}" class="" alt="">
+        <img src="../../public/img/${maxProd.cimg_prod}" class="" alt="">
       </div>
     </div>
           `;
@@ -121,23 +121,24 @@ const crearItemBoxs = (productosEnOferta)=>{
                     </div>` : ``}
                   
                     <div class="imgs">
-                        <img src="./public/img/${prod.cimg_prod}" alt="">
+                        <img src="../../public/img/${prod.cimg_prod}" alt="">
                     </div>
                     <div class="image-body">
                         <h6>${prod.cnombre_producto}</h6>
                         <div class="btns">
                         
                         <div class="row">
-                            <div class="col-7 col-lg-8 col-md-8 col-sm-8  col-btns-cards">
-                            <a href="#" title="Ver Informacion del Producto" class="btn-prod text-center" value="${prod.producto_id}">Ver Producto</a>
-                            <a href="#" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
-                            </div>
-                            <div class="col-5 col-lg-4 col-md-4 col-sm-4 col-precios-cards">
+                            <div class="col-12 col-precios-cards">
                             ${prod.nprecio_descuento > 1
                               ? `<span class="precio_tachado text-danger">$${prod.nprecio}</span>
                                  <span class="">$${prod.nprecio_descuento}</span> Cuotas Diarias`
                               : `<span class="">$${prod.nprecio}</span> Cuotas Diarias`}
                             </div>
+                            <div class="col-12 col-btns-cards">
+                            <a href="#" title="Ver Informacion del Producto" class="btn-prod text-center" value="${prod.producto_id}">Ver Producto</a>
+                            <a href="#" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
+                            </div>
+                            
                         </div>
                         </div>
                     </div>

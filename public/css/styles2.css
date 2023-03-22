@@ -344,6 +344,7 @@ section .items span{
     display:flex;
     justify-content:center !important;
     align-items:center;
+    flex-wrap:nowrap;
     background:var(--bs-light);
     padding:6px 10px;
     margin:15px 5px;
@@ -442,7 +443,7 @@ section .items span.active{
 .product .itemBox .image .imgs {
     overflow:hidden;
     width:100%;
-    height:65%;
+    height:57%;
 }
 .imgs img{
     width:100%;
@@ -460,7 +461,7 @@ section .items span.active{
 
 .product .itemBox .image .image-body{
     padding:10px 5px;
-    height:35%;
+    height:53%;
 
 } 
 
@@ -505,11 +506,22 @@ section .items span.active{
     color:var(--gameLips);    
 }
 
+.btns .row{
+    /* border: 1px solid red; */
+    width:100%;
+    /* No quitar esta propiedad */
+    transform:translateX(10px); 
+}
+
+
 .col-btns-cards{
     display:flex;
     flex-direction: column;
     justify-content:end;
     gap:5px;
+}
+.col-btns-cards a{
+    width:100% !important;
 }
 
 /* ----------------------------- VerProducto.php ------------------------------- */
@@ -824,10 +836,24 @@ section .items span.active{
     .text-oferta a{
         align-self: center;
     }
+
+    .product .itemBox .image .imgs {
+        height:57%;
+    }
+        
+        
+    .product .itemBox .image .image-body{
+        padding:5px;
+        height:53%;
+        
+    } 
+
     .cont-prod-oferta{
         justify-content:center;
     }
-
+    .col-btns-cards a{
+        width:100% !important;
+    }
     
     /* ----------------------------- verProducto.html ------------------------------- */
     .contenedor-img-prod{
@@ -893,20 +919,20 @@ section .items span.active{
 
     .product .itemBox{
         width:46%;
-        height:350px;
+        height:380px;
         margin:5px;
     }
 
     .product .itemBox .image .imgs {
         overflow:hidden;
         width:100%;
-        height:60%;
+        height:55%;
     }
         
         
     .product .itemBox .image .image-body{
         padding:5px;
-        height:40%;
+        height:55%;
         
     } 
     .image-body h6{
@@ -930,9 +956,12 @@ section .items span.active{
     .col-precios-cards{
         /* width:100%; */
         transform:translateX(0);
-        font-size:.85em;
+        font-size:.8em;
         text-align:start;
 
+    }
+    .col-precios-cards span{
+        font-weight:700;
     }
 
 
@@ -990,17 +1019,17 @@ section .items span.active{
 
     .product .itemBox{
         /* width:46%; */
-        height:330px;
+        height:380px;
         margin:5px;
     }
-    .product .itemBox .image .imgs {
+    /* .product .itemBox .image .imgs { 
         height:55%;
     }
     .product .itemBox .image .image-body{
         /* padding:5px; */
-        height:45%;
+        /* height:55%; */
         
-    } 
+    /* }  */ 
 }
 
 /*Celulares angostos*/
@@ -1028,7 +1057,7 @@ section .items span.active{
     
     }
     .product-title h3{
-        font-size:1.15em;
+        font-size:1em;
     }
 
     .product{
@@ -1036,8 +1065,9 @@ section .items span.active{
     }
     .product .itemBox{
         width:49%;
-        height:340px;
+        height:360px;
         margin:0;
+        /* overflow:auto; */
     }
     .product .itemBox .image .imgs {
         height:50%;
@@ -1058,14 +1088,14 @@ section .items span.active{
 
     .col-precios-cards{
         /* width:100%; */
-        transform:translateX(-10px);
+        transform:translateX(0);
         font-size:.85em;
         text-align:start;
 
     }
     .col-btns-cards a{
         /* padding:7px; */
-        width:120%;
+        width:100%;
         font-size:13px;
     }
     .col-btns-cards a:last-child{
@@ -1088,7 +1118,7 @@ section .items span.active{
 @media only screen and (max-width:330px){
     .product .itemBox{
         width:270px;
-        height:430px;
+        height:410px;
     }
     .product .itemBox .image .oferta{
         
@@ -1100,11 +1130,11 @@ section .items span.active{
         background-color:var(--redSound);
     }
     .product .itemBox .image .imgs {
-        height:65%;
+        height:55%;
     }
     .product .itemBox .image .image-body{
         padding:10px 5px;
-        height:35%;
+        height:55%;
     
     }
 
@@ -1114,7 +1144,7 @@ section .items span.active{
 
     .col-btns-cards a{
         padding:8px;
-        font-size:1em;
+        font-size:1.1em;
     }
     .col-precios-cards{
         font-size:1em;
