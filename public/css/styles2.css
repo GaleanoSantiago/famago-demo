@@ -1,0 +1,1124 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning:#ffc107;
+    --bs-danger:#dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --z1:#232741;
+    --z2:#2c2e43;
+    --darkBodyP:#181818;
+    --darkPretty: #333;
+    --darkPretty2:#222;
+    --yellowMostaza: #e8a900;
+    --bg-whiteBlue:#F0F0F0;
+    --bg-whiteSmooth:#FAFAFA;
+    --azulWhite: #f2f6fc;
+    --azulLight: #f6f8fc;
+    --azulLite: #eaf1fb;
+    --aL: #f5f6f7;
+    
+    --borders-light:#dbdbdb;
+    --lightBlue:#03a9f4;
+
+    /* Colores de whatsapp: */
+    --wa-1: #005c4b;
+    --wa-2: #44c554;
+    --wa-3: #128c7e;
+
+    /* Colores de famago */
+    --naranjaFamago:#f18e00;
+    --azulFamago:#003480;
+    --lightFamago:#f1f1f1;
+
+    --fa-1:var(--blueSound);
+    --fa-2:#003480;
+    --fa-3:#f1f1f1;
+
+    --fa-1-1:#f5a22e;
+    --gameLips:#be123c;
+
+    /* Naranja */
+
+    --reder:#E63946;
+    --orangeBright: #FF3C0C;
+    --orangeKiller:#EE6C4D;
+    --redSound: #E63946;
+    --redRoboto:#C72931;
+
+    /* Azul */
+
+    --blueSober: #264653;
+    --blueBright: #317AC7;
+    --blueRetro: #168AAD;
+    --blueSound: #457B9D;
+
+    /* Blanco */
+
+    --whiteGrant: #eef3ff;
+
+    /* Amarillo */
+    --yell-1: #f3d661;
+    --yell-2: #f2c84d;
+    --yell-3: #f5c043;
+    /* Negro */
+
+    --black1: #283035;
+    --black2: #303A40;
+    --black3: #354249;
+
+    /* Combinacion */
+    --comb1: #ff0054;
+    --comb2: #00002c;
+    --comb3: #001966;
+    --comb4: #eef3ff;
+
+    --gradient-1:linear-gradient(to bottom right, #f3d661, #f2c84d, #f5c043);
+}
+
+body{
+    max-width: 100% !important;
+    /* overflow-x: hidden !important; */
+    scroll-behavior: smooth;          
+    background-color:var(--fa-3);  
+    height:1000vh;
+    font-family: 'Lato', sans-serif;
+}
+
+/* section{
+    padding:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin: 40px auto;
+} */
+section{
+    padding:40px 0;
+}
+
+/* ------------------------- NavBar ----------------------------- */
+
+#menubar{
+    max-height:50px;
+    background-color:var(--fa-1);
+    /* position:fixed; */
+    left:0;
+    top:0;
+    width:100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index:99;
+}
+#menubar li a{
+    color:var(--fa-3);
+    /* color: var(--bs-dark); */
+    font-size:1.25em;
+    font-weight: 600;
+    transition: color .4s ease;
+    text-decoration:none;
+
+}
+#menubar li a:hover{
+    color: var(--bs-light);
+    transition: color .4s ease;
+}
+#menubar ul{
+    width:50%;
+    justify-content:space-around;
+    list-style: none;
+    /* border:1px solid #000; */
+    margin-top:10px;
+    display:flex;
+}
+
+.img-logo-nb{
+    padding:5px 0;
+    height:50px;
+    max-height:50px;
+}
+.img-logo-nb img{
+    max-width: 100%;
+    max-height: 40px;
+}
+.text-fa-2{
+    color:var(--fa-2) !important;
+}
+.dropdown-menu{
+    background-color:var(--fa-1);
+    transition: all .4s ease;
+}
+.dropdown-menu a:hover{
+    background-color:var(--fa-1-1);
+    transition: all .4s ease;
+
+}
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .4s ease;
+    animation: popDown 0.5s;
+}
+
+@keyframes popDown {
+    0% {
+      transform: translateY(-100px);
+    }
+  }
+/* ------------------------- Header Ofertas ----------------------------- */
+
+.section-ofertas{
+    padding:40px 0;
+}
+
+.globo-oferta{
+    background: var(--gradient-1);
+    border-radius: 40px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+
+}
+
+.cont-text-oferta{
+    display:flex;
+    align-items:start;
+    justify-content:end;
+    height:400px;
+}
+.cont-prod-oferta{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.prod-oferta{
+    /* border:1px solid red; */
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+.prod-oferta img{
+    width:80%;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+    border-radius:10px;
+}
+.text-oferta{
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    height:100%;
+}
+.text-oferta h1{
+    font-weight: 800;
+    /* font-size:calc(1rem + 3.9vw); */
+    /* color:var(--gameLips); */
+    animation: cambia-color 2s ease-in-out infinite;
+}
+@keyframes cambia-color {
+    0% {
+        color: var(--bs-dark);
+    }
+
+    50% {
+        color: var(--blueSound);
+    }
+
+    100% {
+        color: var(--bs-dark);
+
+    }
+  }
+.card-text-oferta{
+    background-color:var(--bs-white);
+    padding: 20px 30px;
+    border-radius:10px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+    max-width:400px;
+
+}
+.card-text-oferta>p>span{
+    color:var(--fa-2);
+    font-size:1.3em;
+}
+.card-text-oferta>p{
+    text-align: center;
+}
+.text-oferta a{
+    align-self: end;
+}
+.btns-oferta{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+}
+.btn-oferta{
+    /* margin-top:10px; */
+    /* width:150px; */
+    /* height:50px; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.btn-wa-oferta{
+    padding:8px;
+    width:150px;
+    background:#25d366;
+    color:var(--bs-light);
+    font-weight: bold;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:5px;
+    transition:all .4s ease;
+    border:none;
+    text-decoration:none;
+}
+.btn-wa-oferta span{
+    font-size:1.3em;
+    color:var(--bs-light);
+}
+.btn-wa-oferta:hover{
+    background:#1cc459;
+    transition:all .4s ease;
+    color:var(--bs-white);
+
+}
+/* ------------------------- Seccion de productos ----------------------------- */
+
+/* .product-title{
+    display:flex;
+    justify-content:space-between;
+} */
+.product-title a{
+    color:var(--fa-1);
+    text-decoration:none;
+    transition: color .4s ease;
+
+}
+.product-title a{
+    color:var(--fa-1-1);
+    transition: color .4s ease;
+}
+
+
+
+section .items{
+    display:flex;
+    /* padding:0; */
+    /* justify-content: center;
+    align-items:center; */
+    /* flex-wrap:wrap; */
+    /* flex: 1 0 auto; */
+    margin-bottom:20px;
+}
+
+/* Carrusel */
+
+.carrusel{
+	display:flex;
+	flex-wrap: nowrap;
+	overflow: scroll;
+    overflow-y:hidden;
+
+}
+
+section .items span{
+    /* list-style: none; */
+    /* background:#eee; */
+    display:flex;
+    justify-content:center !important;
+    align-items:center;
+    background:var(--bs-light);
+    padding:6px 10px;
+    margin:15px 5px;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:background .4s ease;
+    border-radius:5px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+    font-size:.9em;
+
+}
+section .items span:hover{
+    background:var(--borders-light);
+    /* background:var(--blueSober); */
+    transition:background .4s ease;
+}
+
+section .items span.active{
+    background:var(--gradient-1);
+    transition:background .4s ease;
+    /* color:var(--bs-light); */
+}
+
+.product{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.product-title{
+    width:100%;
+}
+
+.product .itemBox{
+    position:relative;
+    width:270px;
+    height:430px;
+    margin:10px;
+    display:block;
+    transition:all .4s;
+    overflow:hidden;
+    border-radius:6px;
+    border:1px solid var(--borders-light);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+}
+.product .itemBox:hover{
+    transform:scale(1.01);
+    transition:all .4s;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+.product .itemBox.hide{
+    display:none;
+    transition:all .4s;
+}
+
+.product .itemBox .image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* object-fit:cover; */
+    background:var(--bs-white);
+    border-radius:6px;
+    
+
+}
+
+.image h3{
+    color:#181818;
+}
+
+/* ----- Equiteta de oferta. Experimental ----- */
+.product .itemBox .image .oferta{
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    height:100px;
+    width:200px;
+    position:absolute;
+    top:-35px;
+    right:-85px;
+    transform: rotate(45deg);
+    z-index:2;
+    color:var(--bs-light);
+    background-color:var(--redSound);
+}
+/* .product .itemBox .image .oferta span{
+    border:1px solid #000;
+} */
+
+
+.product .itemBox .image .imgs {
+    overflow:hidden;
+    width:100%;
+    height:65%;
+}
+.imgs img{
+    width:100%;
+    height:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position: center;
+    transition:all .4s ease;
+
+}
+.product .itemBox:hover .imgs img{
+    transform:scale(1.05);
+    transition:all .4s ease;
+}
+
+.product .itemBox .image .image-body{
+    padding:10px 5px;
+    height:35%;
+
+} 
+
+.image-body h5,h4{
+    text-align: center;
+}
+
+.btns{
+    position:absolute;
+    bottom:10px;    
+}
+
+.btn-prod{
+    width:150px !important;
+    padding:8px;
+    background:var(--fa-1);
+    color:var(--bs-light);
+    font-weight: 700;
+    border:none;
+    border-radius:5px;
+    transition: all .4s ease;
+    text-decoration:none;
+
+}
+
+.btn-prod:hover{
+    background:var(--azulFamago);
+    transition: all .4s ease;
+    color:var(--bs-light);
+}
+
+.precio_tachado{
+    text-decoration:line-through;
+}
+
+.btns span{
+    color:var(--fa-2);
+    font-weight:600;
+    /* font-size:1rem; */
+}
+.descuento span{
+    color:var(--gameLips);    
+}
+
+.col-btns-cards{
+    display:flex;
+    flex-direction: column;
+    justify-content:end;
+    gap:5px;
+}
+
+/* ----------------------------- VerProducto.php ------------------------------- */
+
+.section-ver-producto{
+    margin-top:50px;
+}
+
+.contenedor-producto{
+    background-color: var(--bs-white);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+.contenedor-img-prod{
+    overflow:hidden;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.contenedor-img-prod img{
+    width:100%;
+}
+
+.desc-prod, .footer-prod{
+    padding:30px 20px;
+}
+
+.desc-prod p{
+    margin-top:50px;
+    font-size:1.1rem;
+}
+.footer-prod p{
+    font-size:1.7rem;
+
+}
+.footer-prod p>span{
+    color:var(--fa-2);
+    font-weight: 700;
+}
+.footer-prod p>span:first-child{
+    text-decoration:line-through;
+}
+
+/* ----------------------------- catalogo-productos.html ------------------------------- */
+
+.section-catalogo{
+    /* margin-top:80px; */
+    padding:40px 20px;
+}
+
+/* ----------------------------- Modal ------------------------------- */
+/* .modal-title{
+    color:var(--bs-light);
+}
+.btn-close{
+    background-color:var(--bs-light);
+} */
+
+.modal-content{
+    background-color:var(--bs-light);
+}
+
+/* .modal-img{
+    overflow:hidden;
+} */
+.cont-modal-img{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.cont-modal-img img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    object-position: center;
+}
+
+.modal-desc{
+    /* height:100%; */
+    padding:20px;
+}
+
+.btn-wa{
+    padding:10px 40px;
+    /* width:150px; */
+    background:#25d366;
+    color:var(--bs-light);
+    font-weight: bold;
+    border-radius:10px;
+    font-size:1.3rem;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:all .4s ease;
+    border:none;
+    text-decoration:none;
+}
+.btn-wa span:first-child{
+    font-size:35px;
+}
+
+.btn-wa:hover{
+    background:#128c7e;
+    color:var(--bs-light);
+    transition:all .4s ease;
+
+}
+
+
+
+/* -------------------------------- Seccion de Responsive -------------------------------------- */
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+/* ----------------------------- Index ------------------------------- */
+
+    .card-text-oferta{
+        padding: 10px 20px;       
+        max-width:300px;
+    }
+
+/* ----------------------------- Modal ------------------------------- */
+
+    .cont-modal-img{
+        width:70%;
+        height:250px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+/* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:80%;
+    }
+    
+}
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    /* ----------------------------- Index ------------------------------- */
+
+    #menubar ul{
+        width:100%;
+    }
+    .img-logo-nb{
+        padding:5px 0;
+        height:50px;
+        max-height:50px;
+    }
+    .img-logo-nb img{
+        width:50%;
+        height:auto;
+        /* max-height: 40px; */
+    }
+    /* ----------------------------- Index ------------------------------- */
+
+    .prod-oferta{
+        padding:10px;
+    }
+    .prod-oferta img{
+        width:100%;
+    }
+    .card-text-oferta{
+        padding: 10px;       
+        max-width:250px;
+        transform:translateX(20px);
+    }
+    .card-text-oferta>p>span{
+        font-size:1em;
+    }
+
+    .product .itemBox{
+        width:250px;
+        height:430px;
+        margin:5px;
+        overflow:hidden;
+    }
+    .col-precios-cards{
+        transform:translateX(-10px);
+    }
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+        height:250px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+
+/* ----------------------------- Index.html ------------------------------- */
+    .cont-text-oferta{
+        padding:0;
+        height:auto;
+        justify-content:center;
+    }
+    .text-oferta{
+        justify-content: center;
+    }
+    .text-oferta h4{
+        font-size:1.1rem;
+    }
+    .text-oferta h3{
+        font-size:1.3rem;
+    }
+    .text-oferta a{
+        align-self: center;
+    }
+    .cont-prod-oferta{
+        justify-content:center;
+    }
+    /* .prod-oferta img{
+        width:50%;
+    } */
+
+
+    /* ----------------------------- verProducto.html ------------------------------- */
+    .contenedor-img-prod{
+        height:auto;
+    }
+    .contenedor-img-prod img{
+        width:50%;
+    }
+    .desc-prod{
+        padding:15px;
+    }
+    .footer-prod{
+        padding:15px;
+    }
+    .desc-prod p{
+        margin-top:0;
+        font-size:1.1rem;
+    }
+    .footer-prod p{
+        font-size:1.7rem;
+    
+    }
+
+}
+
+/*Celulares*/
+@media only screen and (max-width: 575px){
+
+    /* ----------------------------- Index ------------------------------- */
+
+    #menubar ul{
+        width:100%;
+    }
+
+    /* ----------------------------- Index ------------------------------- */
+    .globo-oferta{
+        padding-bottom:20px;
+    }
+    .prod-oferta{
+        padding:10px;
+    }
+    .prod-oferta img{
+        width:90%;
+    }
+    .card-text-oferta{
+        padding: 10px;       
+        max-width:250px;
+        transform:translateX(20px);
+    }
+    .card-text-oferta>p>span{
+        font-size:1em;
+    }
+
+    .product .itemBox{
+        width:250px;
+        height:430px;
+        margin:5px;
+        overflow:hidden;
+    }
+    .col-precios-cards{
+        text-align:center;
+    }
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:50%;
+        height:200px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+
+
+    /* ----------------------------- Index.html ------------------------------- */
+    .cont-text-oferta{
+        padding:0;
+        height:auto;
+        justify-content:center;
+    }
+    .text-oferta{
+        justify-content: center;
+        padding-bottom:0;
+        /* padding:0; */
+    }
+    .text-oferta h4{
+        font-size:1.1rem;
+    }
+    .text-oferta h3{
+        font-size:1.3rem;
+    }
+    .text-oferta span{
+        font-size:1rem;
+
+    }
+    .text-oferta a{
+        align-self: center;
+    }
+    .cont-prod-oferta{
+        justify-content:center;
+    }
+
+    
+    /* ----------------------------- verProducto.html ------------------------------- */
+    .contenedor-img-prod{
+        height:auto;
+    }
+    .contenedor-img-prod img{
+        width:50%;
+    }
+    .desc-prod{
+        height:auto;
+        padding:15px;
+    }
+    .footer-prod{
+        padding:15px;
+    }
+    .desc-prod p{
+        margin-top:0;
+        font-size:1rem;
+    }
+    .footer-prod p{
+        font-size:1.4rem;
+    
+    }
+}
+
+@media only screen and (max-width:475px){
+
+/* ----------------------------- Inicio ------------------------------- */
+    .globo-oferta{
+        padding:0;
+    }
+
+    .prod-oferta img{
+        width:200px;
+    }
+    .card-text-oferta{
+        padding: 10px;       
+        max-width:auto;
+        transform:translateX(0);
+    }
+
+    .text-oferta{
+        padding:30px 10px;
+        
+    }
+    .text-oferta h1{
+        font-size:1.6em;
+        font-weight: 700;
+    }
+    .btns-oferta{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .product .itemBox .image .oferta{
+        
+        height:100px;
+        width:200px;
+        top:-40px;
+        right:-90px;
+        font-size:.85em;
+    }
+
+    .product .itemBox{
+        width:46%;
+        height:350px;
+        margin:5px;
+    }
+
+    .product .itemBox .image .imgs {
+        overflow:hidden;
+        width:100%;
+        height:60%;
+    }
+        
+        
+    .product .itemBox .image .image-body{
+        padding:5px;
+        height:40%;
+        
+    } 
+    .image-body h6{
+        font-size:.9em;
+    }
+    .btns span{
+        color:var(--fa-2);
+        font-weight:300;
+    }
+    .col-btns-cards{
+        /* width:100%; */
+        align-items:center !important;
+        justify-content:center;
+    }
+    .col-btns-cards a{
+        font-size:13px;
+        padding:6px;
+        width:100% !important;
+
+    }
+    .col-precios-cards{
+        /* width:100%; */
+        transform:translateX(0);
+        font-size:.85em;
+        text-align:start;
+
+    }
+
+
+/* ----------------------------- inicio catalogo ------------------------------- */
+
+    .items .list{
+        font-size:13px;
+    }
+
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+    }
+     /* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:425px){
+/* ----------------------------- Ininio ------------------------------- */
+    
+    .prod-oferta img{
+        width:180px;
+    }
+    
+    .text-oferta h1{
+        font-size:1.4em;
+        font-weight: 700;
+    }
+
+    .text-oferta h4{
+        font-size:.95em;
+    }
+    .text-oferta p{
+        font-size:.95em;
+    }
+
+    .product-title h3{
+        font-size:1.4em;
+    }
+
+    .product .itemBox .image .oferta{
+        
+        top:-44px;
+        right:-94px;
+        font-size:.85em;
+    }
+    .product .itemBox .image .oferta span{
+        width:30%;
+        text-align: center;
+
+    }
+
+    .product .itemBox{
+        /* width:46%; */
+        height:330px;
+        margin:5px;
+    }
+    .product .itemBox .image .imgs {
+        height:55%;
+    }
+    .product .itemBox .image .image-body{
+        /* padding:5px; */
+        height:45%;
+        
+    } 
+}
+
+/*Celulares angostos*/
+@media only screen and (max-width:375px){
+
+    #menubar ul{
+        justify-content: space-between;
+    }
+/* ----------------------------- Inicio ------------------------------- */
+    .section-ofertas{
+        margin:10px 3px;
+        /* border:1px solid #000; */
+        padding:0;
+        background: var(--gradient-1);
+        border-radius: 40px;
+        box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+    }
+
+    .globo-oferta{
+        /* border:1px solid #000; */
+
+        background: none;
+        border-radius: none;
+        box-shadow:none ;
+    
+    }
+    .product-title h3{
+        font-size:1.15em;
+    }
+
+    .product{
+        gap:5px;
+    }
+    .product .itemBox{
+        width:49%;
+        height:340px;
+        margin:0;
+    }
+    .product .itemBox .image .imgs {
+        height:50%;
+    }
+    .product .itemBox .image .image-body{
+        /* padding:5px; */
+        height:50%;
+        
+    } 
+
+    .text-oferta h1{
+        font-size:1.2em;
+        font-weight: 700;
+    }
+    .prod-oferta img{
+        width:160px;
+    }
+
+    .col-precios-cards{
+        /* width:100%; */
+        transform:translateX(-10px);
+        font-size:.85em;
+        text-align:start;
+
+    }
+    .col-btns-cards a{
+        /* padding:7px; */
+        width:120%;
+        font-size:13px;
+    }
+    .col-btns-cards a:last-child{
+        padding:7px;
+
+    }
+
+/* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:70%;
+    }
+
+    /* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width:330px){
+    .product .itemBox{
+        width:270px;
+        height:430px;
+    }
+    .product .itemBox .image .oferta{
+        
+        top:-35px;
+        right:-85px;
+        transform: rotate(45deg);
+        z-index:2;
+        color:var(--bs-light);
+        background-color:var(--redSound);
+    }
+    .product .itemBox .image .imgs {
+        height:65%;
+    }
+    .product .itemBox .image .image-body{
+        padding:10px 5px;
+        height:35%;
+    
+    }
+
+    .image-body h6{
+        font-size: 1em;
+    }
+
+    .col-btns-cards a{
+        padding:8px;
+        font-size:1em;
+    }
+    .col-precios-cards{
+        font-size:1em;
+        transform:translateX(0);
+        text-align:center;
+    }
+}
