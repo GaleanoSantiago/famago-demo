@@ -1,4 +1,4 @@
-// ----------------- Navbar -----------------
+﻿// ----------------- Navbar -----------------
 const navbar = document.querySelector('#menubar');
 // -------------------- Globo de oferta --------------------
 const globoOferta = document.getElementById("globo-oferta");
@@ -22,7 +22,7 @@ window.addEventListener('scroll', function() {
 // Funcion para obtener productos
 const obtenerProductos = async () => {
   // Es una petición GET, no necesitamos indicar el método ni el cuerpo
-  const respuestaRaw = await fetch("../../view/frontend/obtener_productos.php");
+  const respuestaRaw = await fetch("./productos.json");
   const productos = await respuestaRaw.json();
   // console.log(productos);
 
