@@ -374,6 +374,8 @@ section .items span.active{
     justify-content:center;
     flex-wrap:wrap;
     align-items:center;
+    min-height:200px;
+    /* border:1px solid var(--bs-secondary); */
 }
 
 .product-title{
@@ -399,7 +401,7 @@ section .items span.active{
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
-.product .itemBox.hide{
+.product .itemBox.hide, .product .hide{
     display:none;
     transition:all .4s;
 }
@@ -494,10 +496,6 @@ section .items span.active{
     color:var(--bs-light);
 }
 
-.precio_tachado{
-    text-decoration:line-through;
-}
-
 .btns span{
     color:var(--fa-2);
     font-weight:700;
@@ -527,6 +525,25 @@ section .items span.active{
     width:100% !important;
 }
 
+.more-product{
+    min-height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border: 1px solid #000; */
+    
+}
+a{
+    text-decoration: none;
+}
+.more-product a{
+    color:var(--bs-warning);
+    transition: color .2s ease-in-out;
+}
+.more-product a:hover{
+    transition: color .2s ease-in-out;
+    color:var(--fa-1-1);
+}
 /* ----------------------------- VerProducto.php ------------------------------- */
 
 .section-ver-producto{
@@ -635,7 +652,10 @@ section .items span.active{
 }
 
 
-
+.precio_tachado{
+    text-decoration:line-through;
+    color:var(--redRoboto) !important;
+}
 /* -------------------------------- Seccion de Responsive -------------------------------------- */
 
 /* Escritorio pequeño / tablet */

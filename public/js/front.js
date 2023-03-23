@@ -5,11 +5,13 @@ const globoOferta = document.getElementById("globo-oferta");
 const tituloDinamico = document.getElementById("titulo-dinamico");
 // ---------- Obteniendo la seccion del catalogo -----------------
 const filaCatalogo = document.getElementById("catalogo");
-// Creando el documentFragment
+// ------ Mensaje para cuando no hay productos en el catalogo ----
+const mensajeError = document.getElementById("mensajeError");
+// ------------- Creando el documentFragment -------------
 let documentFragment = document.createDocumentFragment();
 
 
-window.addEventListener('scroll', function() {
+const manejarScroll = () => {
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollPosition >= 350) {
@@ -17,7 +19,11 @@ window.addEventListener('scroll', function() {
   } else {
     navbar.classList.remove('fixed-navbar');
   }
-});
+}
+
+window.addEventListener('scroll', manejarScroll);
+
+manejarScroll();
 
 // Funcion para obtener productos
 const obtenerProductos = async () => {
@@ -79,7 +85,7 @@ const crearGloboOferta = (maxProd)=>{
           <h4>${maxProd.cnombre_producto}</h4>
           <p>
           ${maxProd.nprecio_descuento > 1
-            ? `<span class="precio_tachado text-danger">$${maxProd.nprecio}</span>
+            ? `<span class="precio_tachado">$${maxProd.nprecio}</span>
                <span class="">$${maxProd.nprecio_descuento}</span> Cuotas Diarias`
             : `<span class="">$${maxProd.nprecio}</span> Cuotas Diarias`}
           </p>
@@ -92,7 +98,7 @@ const crearGloboOferta = (maxProd)=>{
     </div>
     <div class="cont-prod-oferta col-6 ">
       <div class="prod-oferta">                            
-        <img src="./public/img/${maxProd.cimg_prod}" class="" alt="">
+        <img src="./public/img/${maxProd.cimg_prod}" class="" alt="${maxProd.cnombre_producto}">
       </div>
     </div>
           `;
@@ -121,7 +127,7 @@ const crearItemBoxs = (productosEnOferta)=>{
                     </div>` : ``}
                   
                     <div class="imgs">
-                        <img src="./public/img/${prod.cimg_prod}" alt="">
+                        <img src="./public/img/${prod.cimg_prod}" alt="${prod.cnombre_producto}">
                     </div>
                     <div class="image-body">
                         <h6>${prod.cnombre_producto}</h6>
@@ -130,7 +136,7 @@ const crearItemBoxs = (productosEnOferta)=>{
                         <div class="row">
                             <div class="col-12 col-precios-cards">
                             ${prod.nprecio_descuento > 1
-                              ? `<span class="precio_tachado text-danger">$${prod.nprecio}</span>
+                              ? `<span class="precio_tachado">$${prod.nprecio}</span>
                                  <span class="">$${prod.nprecio_descuento}</span> Cuotas Diarias`
                               : `<span class="">$${prod.nprecio}</span> Cuotas Diarias`}
                             </div>
@@ -160,12 +166,18 @@ const selectorFiltro = ()=>{
 
   const list = document.querySelectorAll(".list");
   const itemBox = document.querySelectorAll(".itemBox");
+  let countItems = 0;
 
   // -------Para activar el efecto--------
 
   list.forEach(li=>{
       li.addEventListener("click",()=>{
-          
+          countItems=0;
+
+          if (mensajeError.classList.contains('active')) {
+              mensajeError.classList.replace('active', 'hide'); // reemplaza la clase "active" por "hide"
+          }  
+
           list.forEach(lis=>{
               lis.classList.remove("active");
           })
@@ -183,7 +195,15 @@ const selectorFiltro = ()=>{
                   item.classList.remove("hide");
                   item.classList.add("active");
               }
-
+              
+              if(item.classList[1]=="hide"){
+                countItems++;
+                if(countItems===itemBox.length){
+                    mensajeError.classList.remove("hide");
+                    mensajeError.classList.add("active");
+                }
+                
+            };
           })
       })
   })
