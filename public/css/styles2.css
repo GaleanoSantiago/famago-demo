@@ -87,6 +87,8 @@
     --comb4: #eef3ff;
 
     --gradient-1:linear-gradient(to bottom right, #f3d661, #f2c84d, #f5c043);
+
+    --bs-border: #dee2e6;
 }
 
 body{
@@ -423,7 +425,7 @@ section .items span.active{
     color:#181818;
 }
 
-/* ----- Equiteta de oferta. Experimental ----- */
+/* ----- Equiteta de oferta. Experimental (FUNCIONO) ----- */
 .product .itemBox .image .oferta{
     display:flex;
     justify-content:center;
@@ -544,15 +546,23 @@ a{
     transition: color .2s ease-in-out;
     color:var(--fa-1-1);
 }
-/* ----------------------------- VerProducto.php ------------------------------- */
 
+/* ----------------------------- show producto ------------------------------- */
+
+.show-img img{
+    width:60%;
+}
+/* 
 .section-ver-producto{
     margin-top:50px;
-}
+} */
 
 .contenedor-producto{
     background-color: var(--bs-white);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+    border-radius: 10px;
+
 
 }
 .contenedor-img-prod{
@@ -566,24 +576,68 @@ a{
     width:100%;
 }
 
-.desc-prod, .footer-prod{
+.desc-prod{
     padding:30px 20px;
 }
+.desc-prod h5{
+    color:var(--blueBright);
+}
+.footer-prod{
+    padding:0 20px;
+}
 
-.desc-prod p{
-    margin-top:50px;
-    font-size:1.1rem;
+.desc-prod-scrll{
+	overflow-y: scroll;
+    height:350px;
+}
+/* .desc-prod p{
+    font-size:1em; */
+/* } */
+
+.footer-prod{
+    max-height:200px;
+    height:200px;
+}
+
+.footer-prod>span{
+    font-size:1.3em;
+    color:var(--blueBright);
+
 }
 .footer-prod p{
     font-size:1.7rem;
 
 }
 .footer-prod p>span{
-    color:var(--fa-2);
     font-weight: 700;
 }
 .footer-prod p>span:first-child{
     text-decoration:line-through;
+    color:var(--redRoboto);
+
+}
+.footer-prod p>span.no-line-thru{
+    text-decoration:none;
+    color:var(--fa-2);
+
+}
+
+.cont-carac-gener{
+    padding:10px;
+
+}
+.caract-gener{
+    height: 200px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.cont-carac-gener h5{
+    color:var(--fa-2);
+}
+
+.scrolleable{
+    height: auto;
 }
 
 /* ----------------------------- catalogo-productos.html ------------------------------- */
@@ -645,7 +699,7 @@ a{
 }
 
 .btn-wa:hover{
-    background:#128c7e;
+    background:#1cc459;
     color:var(--bs-light);
     transition:all .4s ease;
 
@@ -658,6 +712,14 @@ a{
 }
 /* -------------------------------- Seccion de Responsive -------------------------------------- */
 
+/* Escritorio pantalla grande */
+@media only screen and (min-width: 1400px){
+    /* ----------------------------- show producto ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:80%;
+    }
+}
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px){
 /* ----------------------------- Index ------------------------------- */
@@ -678,11 +740,22 @@ a{
         width:100%;
     }
 /* ----------------------------- verProducto.html ------------------------------- */
-
+    .contenedor-img-prod{
+        height:auto;
+    }
     .contenedor-img-prod img{
-        width:80%;
+        width:50%;
     }
     
+    .desc-prod-scrll{
+        height:250px;
+    }
+    .desc-prod{
+        border-top:1px solid var(--bs-border);
+    }
+    .footer-prod{
+        border-top:1px solid var(--bs-border);
+    }
 }
 /* Tablets y phablets */
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -764,6 +837,9 @@ a{
 
 
     /* ----------------------------- verProducto.html ------------------------------- */
+    .section-ver-producto{
+        padding-top:20px;
+    }
     .contenedor-img-prod{
         height:auto;
     }
@@ -772,6 +848,10 @@ a{
     }
     .desc-prod{
         padding:15px;
+    }
+    
+    .desc-prod-scrll{
+        height:200px;
     }
     .footer-prod{
         padding:15px;
@@ -783,6 +863,12 @@ a{
     .footer-prod p{
         font-size:1.7rem;
     
+    }
+    .desc-prod{
+        border-top:1px solid var(--bs-border);
+    }
+    .footer-prod{
+        border-top:1px solid var(--bs-border);
     }
 
 }
@@ -821,18 +907,7 @@ a{
         margin:5px;
         overflow:hidden;
     }
-/* ----------------------------- Modal ------------------------------- */
-    .cont-modal-img{
-        width:50%;
-        height:200px;
-        margin:auto
-    }
-    .cont-modal-img img{
-        width:100%;
-    }
 
-
-    /* ----------------------------- Index.html ------------------------------- */
     .cont-text-oferta{
         padding:0;
         height:auto;
@@ -874,18 +949,47 @@ a{
     .col-btns-cards a{
         width:100% !important;
     }
-    
+
+    /* ----------------------------- Modal ------------------------------- */
+    .cont-modal-img{
+        width:50%;
+        height:200px;
+        margin:auto
+    }
+    .cont-modal-img img{
+        width:100%;
+    }
+
     /* ----------------------------- verProducto.html ------------------------------- */
+    /* .contenedor-producto{
+        
+    } */
+    .section-ver-producto{
+        padding-top:10px;
+    } 
     .contenedor-img-prod{
         height:auto;
     }
     .contenedor-img-prod img{
-        width:50%;
+        width:60%;
     }
     .desc-prod{
         height:auto;
         padding:15px;
     }
+    .desc-prod-scrll{
+        height:200px;
+    }
+    .desc-prod{
+        border-top:1px solid var(--bs-border);
+    }
+    .footer-prod{
+        border-top:1px solid var(--bs-border);
+    }
+    .caract-gener{
+        height: 150px;
+    }
+
     .footer-prod{
         padding:15px;
     }
@@ -896,6 +1000,9 @@ a{
     .footer-prod p{
         font-size:1.4rem;
     
+    }
+    .footer-prod p>span{
+        font-size:1.45em;
     }
 }
 
@@ -996,6 +1103,30 @@ a{
 
     .contenedor-img-prod img{
         width:60%;
+    }
+    .cont-carac-gener h5{
+        font-size:1.06em;
+    }
+    .desc-prod h2{
+        font-size:1.3em;
+    }
+    .desc-prod h5{
+        font-size:1.05em;
+        margin-bottom:20px;
+    }
+
+    
+    .footer-prod>span{
+        font-size:1.1em;
+
+    }
+    .footer-prod p{
+        font-size:1.3rem;
+
+    }
+    .footer-prod p>span{
+        font-weight: 700;
+        font-size:1.4em
     }
 }
 
@@ -1128,6 +1259,31 @@ a{
 
     .contenedor-img-prod img{
         width:70%;
+    }
+
+    .cont-carac-gener h5{
+        font-size:1.03em;
+    }
+    .desc-prod h2{
+        font-size:1.2em;
+    }
+    .desc-prod h5{
+        font-size:1em;
+    }
+    .desc-prod-scrll{
+        height:150px;
+    }
+    .footer-prod>span{
+        font-size:1em;
+
+    }
+    .footer-prod p{
+        font-size:1.1rem;
+
+    }
+    .footer-prod p>span{
+        font-weight: 600;
+        font-size:1.2em
     }
 }
 

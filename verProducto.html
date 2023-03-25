@@ -1,211 +1,97 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famago Equipamientos Comerciales</title>
+    <title>Ver Información del Producto</title>
     <link rel="icon" href="./public/img/logo.webp">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-    crossorigin="anonymous">
-    <!-- Animaciones AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Estilos Propios -->
-    <!-- <link rel="stylesheet" href="./public/css/n7styles.css"> -->
-    <link rel="stylesheet" href="./public/css/styles.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Lato Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./public/css/styles2.css">
 </head>
 <body>
+    
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" id="menubar">
-    <div class="container-fluid">
-        <a class="navbar-brand text-light" href="./index.html">FMG</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-fa-2" aria-current="page" href="./catalogo-productos.html">Productos</a>
-              </li>
-            <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Productos
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./catalogo-productos.html">Equipamientos Comerciales</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </li> -->
-        
-        </ul>
-        <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary" type="submit">Search</button>
-        </form> -->
-        </div>
-    </div>
-    </nav>
+        <nav id="menubar">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row  w-100">
+                    <div class="col-2 col-lg-1 col-md-1 col-sm-2">
+                        <div class="img-logo-nb">
+                            <img src="./public/img/logo.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-10 d-flex justify-content-end">
+                        <ul class="">
+                            <li><a href="./index.html" class="">
+                                <span class="fa fa-home"></span> 
+                                Inicio
+                            </a></li>
+                            <li><a href="./catalogo.html">
+                                <span class="fa fa-diamond"></span> 
+                                Catalogo
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="section-ver-producto">
-            <div class="container contenedor-producto">
-                <div class="row">
+            <div class="container contenedor-producto" id="contenedor-producto">
+                <!-- <div class="row">
                     <div class="col-12 col-lg-6 colo-md-6 col-sm-12">
-                        <div class="contenedor-img-prod border-end">
-                            <img src="./public/img/1.jpg" alt="">
+                        <div class="col-12 col-lg-12 colo-md-12 col-sm-12">
+                            <div class="contenedor-img-prod">
+                                <img src="./../../public/img/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 colo-md-12 col-sm-12 border-top cont-carac-gener">
+                        <h5>Caracteristicas Generales</h5>
+                            <div class="caract-gener">
+                                <div class="scrolleable">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo rem error beatae, ipsum hic dolores blanditiis officiis, dolorum ab, placeat laudantium cum nobis rerum animi. Esse, inventore temporibus distinctio est accusantium voluptatem aliquid quasi, aperiam laborum optio culpa, quo aut consequuntur architecto cupiditate? Sunt nisi laboriosam temporibus alias debitis pariatur itaque voluptatem eos? Ipsa vero iusto, vel sunt nam dolor voluptatum, placeat aliquam veniam deserunt sapiente fugit et libero aperiam distinctio natus impedit quae nisi laborum unde culpa! Eligendi mollitia, consequuntur quam culpa delectus officia voluptatem accusantium consequatur, cumque provident quibusdam, tempora ratione explicabo nam sint ea quidem molestias!
+                                </p></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 colo-md-6 col-sm-12">
+                    <div class="col-12 col-lg-6 colo-md-6 col-sm-12 border-start col-cont-info">
                         <div class="desc-prod">
-                            <h2>Exhibidora vertical MT 400 - 390 litros</h2>
-                            <p>MT-400. <br>
-                                Capacidad: 390 litros <br>
-                                Ancho: 625 mm. <br>
-                                Profundidad: 620 mm.<br>
-                                 Alto: 1980 mm.</p>
+                            <h2>Exhibidora vertical 250 mts - Unique edition</h2>
+                            <h5 class="text-end fw-light">Carniceria</h5>
+                            <div class="desc-prod-scrll">
+                                <div class="scrolleable">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit alias laborum voluptates numquam saepe voluptatem dolorum cumque dolore modi unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quod voluptatibus quaerat dignissimos amet illo modi assumenda deleniti hic at cum obcaecati sint, ut, natus neque debitis voluptate saepe recusandae eveniet? Fugiat nulla cupiditate nostrum eaque eum? Dolorem quo doloremque delectus facere eum reiciendis deserunt esse, natus consequuntur. Nemo ullam voluptatem earum commodi reprehenderit et temporibus natus delectus aliquam excepturi corrupti eos amet necessitatibus, cum, dolore dolores ex quas ad similique molestiae eaque modi laboriosam deserunt. Perspiciatis inventore vitae ad, ullam libero nobis esse non! Doloremque accusantium fuga voluptatum quae iusto. Placeat saepe nostrum quos excepturi ipsa, odit ab dignissimos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas inventore deleniti fugit eum quo ea aperiam dignissimos, nihil soluta debitis nostrum iure harum modi quibusdam sunt illo nesciunt. Architecto ad laborum corporis voluptates, libero eveniet sunt consectetur ab quos possimus, est illum aliquid eum? Asperiores voluptate iure, recusandae praesentium libero sint accusantium, ducimus et quibusdam facilis mollitia adipisci eos sapiente, cum aut? Illo modi architecto praesentium eius quibusdam magni cupiditate, non, et eum, ipsa eos. Nemo reiciendis non ratione blanditiis exercitationem incidunt eligendi animi voluptate cupiditate debitis. Quisquam minus architecto, tempore error molestiae ipsam hic expedita iste, accusamus eum et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi labore explicabo voluptatum ullam possimus, velit laboriosam perferendis unde aspernatur maxime.</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="footer-prod">
-                            <span>COD: 2307</span><br>
-                            <p>Precio: <span class="footer-prod-precio">$40000</span> <span>$30000</span>
+                            <span>COD: 235</span><br>
+                            
+                            <p>Precio: <span class="footer-prod-precio">$4400</span> <span class="no-line-thru">$3900</span>
+                             Cuotas Diarias
                             </p>
-                            <div class="d-flex justify-content-end">
-                            <a href="https://wa.me/5493704777124?text=Hola,+me+interesa+la+Exhibidora+vertical+MT+400" target="_blank" class="btn-wa"><span class="fa fa-whatsapp"></span>Consultar</a>
-                            </div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+la+Exhibidora+vertical+MT+400" target="_blank" class="btn-wa"><span class="fa fa-whatsapp"></span>Consultar</a>
+                                </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
-        <section class="">
-        
-    <div class="container product">
-        
-        <div class="container product-title">
-        <h3 class="text-secondary">Productos Relacionados</h3> <a href="./catalogo-productos.html"><span class="fa fa-plus"></span> Ver Mas</a>
-        </div>
-
-        <div class="itemBox">
-            <div class="image">
-                <div class="imgs">
-                    <img src="./public/img/2.jpg" alt="">
-                </div>
-                <div class="image-body">
-                    <h6>Exhibidora vertical MT 400 - 390 litros</h6>
-                    <div class="btns">
-                        <div class="descuento text-end">
-                            <span class="">DESCUENTO</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-8 d-flex align-items-center">
-                                <a href="./verProducto.html" class="btn-prod modal-btn">Ver Producto</a>
-                            </div>
-                            <div class="col-3">
-                                <span class="precio_tachado">$30000</span>
-                                <span class="">$25000</span>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="itemBox">
-            <div class="image">
-                <div class="imgs">
-                    <img src="./public/img/4.jpg" alt="">
-                </div>
-                <div class="image-body">
-                    <h6>Batea vidrio curvo con puertas - 1.20 metros - Equ</h6>
-                    <div class="btns">
-                        <div class="descuento text-end">
-                            <span class="">DESCUENTO</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-8 d-flex align-items-center">
-                                <a href="./verProducto.html" class="btn-prod modal-btn">Ver Producto</a>
-                            </div>
-                            <div class="col-3">
-                                <span class="precio_tachado">$40000</span>
-                                <span class="">$35000</span>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="itemBox">
-            <div class="image">
-                <div class="imgs">
-                    <img src="./public/img/1.jpg" alt="">
-                </div>
-                <div class="image-body">
-                    <h6>Exhibidora vertical 3 puertas - 1200 litros</h6>
-                    <div class="btns">
-                        <div class="descuento text-end">
-                            <!-- <span class="">DESCUENTO</span> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-8 d-flex align-items-center">
-                                <a href="./verProducto.html" class="btn-prod modal-btn">Ver Producto</a>
-                            </div>
-                            <div class="col-3">
-                                <!-- <span class="precio_tachado">$50000</span> -->
-                                <span class="">$40000</span>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="itemBox">
-            <div class="image">
-                <div class="imgs">
-                    <img src="./public/img/3.jpg" alt="">
-                </div>
-                <div class="image-body">
-                    <h6>Exhibidora vertical - 1 puerta - 300 litros</h6>
-                    <div class="btns">
-                        <div class="descuento text-end">
-                            <!-- <span class="">DESCUENTO</span> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-8 d-flex align-items-center">
-                                <a href="./verProducto.html" class="btn-prod modal-btn">Ver Producto</a>
-                            </div>
-                            <div class="col-3">
-                                <!-- <span class="precio_tachado">$33000</span> -->
-                                <span class="">$25000</span>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
     </main>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-  <!-- Font Awesome cuenta de Galeano -->
-  <script src="https://kit.fontawesome.com/52ab3134b2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Font Awesome cuenta de Galeano -->
+    <script src="https://kit.fontawesome.com/52ab3134b2.js" crossorigin="anonymous"></script>
     <!-- JS Propios -->
-<script src="./public/js/main.js"></script>
-
+    <script src="./public/js/frontShowProd.js"></script>
 </body>
 </html>

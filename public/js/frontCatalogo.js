@@ -1,4 +1,4 @@
-// ----------------- Navbar -----------------
+﻿// ----------------- Navbar -----------------
 const navbar = document.querySelector('#menubar');
 // ---------- Obteniendo la seccion del catalogo -----------------
 const filaCatalogo = document.getElementById("catalogo");
@@ -72,8 +72,8 @@ const crearItemBoxs = (productos)=>{
                                 : `<span class="">$${prod.nprecio}</span> Cuotas Diarias`}
                               </div>
                               <div class="col-12 col-btns-cards">
-                              <a href="#" title="Ver Informacion del Producto" class="btn-prod text-center" value="${prod.producto_id}">Ver Producto</a>
-                              <a href="#" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
+                              <a href="./verProducto.html?id=${prod.producto_id}" title="Ver Informacion del Producto" class="btn-prod text-center">Ver Producto</a>
+                              <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+${prod.cnombre_producto}" target="_blank" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
                               </div>
                               
                           </div>

@@ -59,7 +59,6 @@ const obtenerProductos = async () => {
     prod.splice(10);
 
   }
-  // console.log(prod);
 
   //LLamando a la funcion para crear los itembox 
   crearItemBoxs(prod);
@@ -90,8 +89,8 @@ const crearGloboOferta = (maxProd)=>{
             : `<span class="">$${maxProd.nprecio}</span> Cuotas Diarias`}
           </p>
           <div class="btns-oferta">
-            <a href="#" class="btn-prod btn-oferta">Ver Producto</a>
-            <a href="#" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp"></span>Consultar</a>
+            <a href="./verProducto.html?id=${maxProd.producto_id}" class="btn-prod btn-oferta">Ver Producto</a>
+            <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+${maxProd.cnombre_producto}" target="_blank" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp"></span>Consultar</a>
           </div>
         </div>
       </div>
@@ -141,8 +140,8 @@ const crearItemBoxs = (productosEnOferta)=>{
                               : `<span class="">$${prod.nprecio}</span> Cuotas Diarias`}
                             </div>
                             <div class="col-12 col-btns-cards">
-                            <a href="#" title="Ver Informacion del Producto" class="btn-prod text-center" value="${prod.producto_id}">Ver Producto</a>
-                            <a href="#" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
+                            <a href="./verProducto.html?id=${prod.producto_id}" title="Ver Informacion del Producto" class="btn-prod text-center" >Ver Producto</a>
+                            <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+${prod.cnombre_producto}" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta" target="_blank"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
                             </div>
                             
                         </div>
