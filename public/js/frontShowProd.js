@@ -76,11 +76,11 @@ const crearShowProd = (producto)=>{
             <span>COD: 235</span><br>
             <p>
             ${producto.nprecio_descuento > 1
-            ? ` Precio: <span class="footer-prod-precio">$4400</span>
-                <span class="no-line-thru">$3900</span>
+            ? ` Precio: <span class="footer-prod-precio">$${producto.nprecio}</span>
+                <span class="no-line-thru">$${producto.nprecio_descuento}</span>
                 Cuotas Diarias` 
                 : 
-              ` <span class="no-line-thru">$3900</span>
+              ` <span class="no-line-thru">$${producto.nprecio}</span>
                 Cuotas Diarias`
             }
             </p>
