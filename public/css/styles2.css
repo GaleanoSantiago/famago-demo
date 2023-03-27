@@ -988,6 +988,12 @@ a{
         font-weight:500;
     }
     /* ----------------------------- Modal ------------------------------- */
+    .modal-fullscreen-sm-down{
+        position:relative;
+        left:-8px;
+        top:-8px;
+    }
+    
     .cont-modal-img{
         width:50%;
         height:200px;
