@@ -20,17 +20,13 @@
         <nav id="menubar">
             <div class="container-fluid d-flex justify-content-center">
                 <div class="row  w-100">
-                    <div class="col-2 col-lg-1 col-md-1 col-sm-2">
+               <!-- <div class="col-2 col-lg-1 col-md-1 col-sm-2">
                         <div class="img-logo-nb">
-                            <img src="./public/img/logo.webp" alt="">
+                            <img src="./../../public/img/logo.webp" alt="">
                         </div>
-                    </div>
-                    <div class="col-10 d-flex justify-content-end">
+                    </div> -->
+                    <div class="col-12 d-flex justify-content-end">
                         <ul class="">
-                        <!-- Button trigger modal -->
-                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Buscador">
-                                <span class="fa fa-search"></span>
-                            </a></li>
                             <li><a href="#" class="">
                                 <span class="fa fa-home"></span> 
                                 Inicio
@@ -38,6 +34,11 @@
                             <li><a href="./catalogo.html">
                                 <span class="fa fa-diamond"></span> 
                                 Catalogo
+                            </a></li>
+				<!-- Button trigger modal -->
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Buscador">
+                                <span class="fa fa-search"></span>
+                                Buscador
                             </a></li>
                         </ul>
                     </div>
@@ -132,8 +133,8 @@
     
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-scrollable  modal-lg modal-fullscreen-sm-down">
-            <div class="modal-content modal-dialog  modal-dialog-scrollable">
+            <div class="modal-dialog modal-lg modal-fullscreen-sm-down modal-dialog-centered">
+            <div class="modal-content">
                 <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel"><span class="fa fa-search"></span> Buscar Productos</h1>
                 <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -160,7 +161,69 @@
             </div>
             </div>
         </div>
-
+	<footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 col-md-7 col-sm-12 footer-copy">
+                        <div>
+                            <h4>Redes Oficiales de Famago</h4>
+                        </div>
+                        <div class="icon-container">
+                            <div class="icon" id="icon-1" title="instagram oficial de famago">
+                                <a href="https://www.instagram.com/famagoequipamientos/" target="_blank" class="d-flex">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 97.75 97.75" style="enable-background:new 0 0 97.75 97.75;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <ellipse cx="48.944" cy="48.719" rx="14.465" ry="14.017"/>
+                                        <path d="M71.333,49.501c0,11.981-10.024,21.692-22.389,21.692s-22.389-9.711-22.389-21.692c0-2.147,0.324-4.221,0.924-6.18h-6.616
+                                            v30.427c0,1.576,1.288,2.863,2.863,2.863h50.159c1.576,0,2.865-1.287,2.865-2.863V43.321h-6.341
+                                            C71.008,45.28,71.333,47.354,71.333,49.501z"/>
+                                        <path d="M65.332,35.11h8.141c1.784,0,3.242-1.458,3.242-3.242v-7.762c0-1.785-1.458-3.243-3.242-3.243h-8.141
+                                            c-1.785,0-3.243,1.458-3.243,3.243v7.762C62.088,33.651,63.547,35.11,65.332,35.11z"/>
+                                        <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
+                                            M75.645,84.891H22.106c-5.087,0-9.246-3.765-9.246-9.244V22.105c0-5.481,4.159-9.245,9.246-9.245h53.539
+                                            c5.086,0,9.246,3.764,9.246,9.245v53.542C84.891,81.126,80.73,84.891,75.645,84.891z"/>
+                                    </g>
+                                </g>
+                                </svg>
+                                </a>
+                            </div>
+                            <div class="icon icon-fb" id="icon-1" title="facebook oficial de famago">
+                                <a href="https://www.facebook.com/famagoformosasucursal/" target="_blank" class="d-flex">
+                                    <svg fill="#000000" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Facebook icon</title><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"></path></g></svg>
+                                </a>
+                                    
+                            </div>
+                        </div>
+                        
+                        <!-- https://goo.gl/maps/c6YekFW4kbbp8mQR8 -->
+                        <p>Este sitio web es una iniciativa de un vendedor 
+                            de la empresa Famago para exhibir los productos 
+                            de la misma y facilitar el contacto con los clientes 
+                            interesados. Queremos dejar en claro que esta página no 
+                            pretende reemplazar la oficial de la empresa <a href="https://famago.com.ar/" target="_blank">famago.com.ar</a> 
+                            y que todas las ganancias por las ventas de los productos serán 
+                            destinadas a Famago. Este sitio web es una herramienta para 
+                            ayudar a mejorar las ventas de la empresa y 
+                            brindar una mejor experiencia al cliente.</p>
+                    </div>
+                    
+                    <div class="col-12 col-lg-5 col-md-5 col-sm-12 footer-ubi">
+                        <svg fill="#fff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" 
+                            stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
+                                <path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z">
+                                </path> 
+                            </g>
+                        </svg>
+                        <h4> Policias de los Territorios Nacionales 765, Formosa</h4>
+                        <a href="https://goo.gl/maps/c6YekFW4kbbp8mQR8" target="_blank" class="btn">Google Maps</a>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
       <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <!-- Font Awesome cuenta de Galeano -->

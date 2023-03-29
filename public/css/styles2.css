@@ -139,12 +139,13 @@ section{
     transition: color .4s ease;
 }
 #menubar ul{
+    padding-left:0;
     width:60%;
+    display:flex;
     justify-content:space-around;
     list-style: none;
     /* border:1px solid #000; */
     margin-top:10px;
-    display:flex;
 }
 
 .img-logo-nb{
@@ -678,10 +679,10 @@ a{
 }
 
 /* ----------------------------- Modal ------------------------------- */
-/* .modal-title{
-    color:var(--bs-light);
-}
-.btn-close{
+.modal-body{
+    min-height:500px;
+ } 
+/* .btn-close{ 
     background-color:var(--bs-light);
 } */
 .modal-header{
@@ -743,6 +744,78 @@ a{
     text-decoration:line-through;
     color:var(--redRoboto) !important;
 }
+/* -------------------------------- Footer -------------------------------------- */
+
+footer{
+    min-height:340px;
+    background-color:#2F5D80;
+    color:var(--bs-white);
+    padding:20px 0;
+    display:flex;
+    align-items:center;
+}
+footer p{
+    padding:10px 0;
+    text-align:justify;
+}
+footer a{
+    color:var(--bs-light);
+    text-decoration:underline;
+
+}
+footer a:hover{
+    color:var(--yellowMostaza);
+}
+/* .footer-copy{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+} */
+.icon-container{
+    padding-top:5px;
+    display:flex;
+    justify-content: space-around;
+    gap:10px;
+    width:50%;
+    margin:auto;
+}
+.icon-container .icon{
+    transition: all .4s ease-in-out;
+    border-radius:100%;
+}
+.icon-container .icon:hover{
+    transition: all .4s ease-in-out;
+    background:var(--bs-white);
+}
+.icon-container svg{
+    width:40px;
+    fill:var(--bs-white);
+    transition: fill .4s ease-in-out;
+}
+.icon-container svg:hover{
+    fill:var(--yell-3);
+    transition: fill .4s ease-in-out;
+
+}
+.footer-ubi{
+    display:flex;
+    gap:5px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.footer-ubi a{
+    background: var(--bs-white);
+
+}
+.footer-ubi a:hover{
+    background:var(--gradient-1);
+}
+
+.footer-ubi svg{
+    width:100px;
+}
 /* -------------------------------- Seccion de Responsive -------------------------------------- */
 
 /* Escritorio pantalla grande */
@@ -792,7 +865,7 @@ a{
 }
 /* Tablets y phablets */
 @media only screen and (min-width: 576px) and (max-width: 767px){
-    /* ----------------------------- Index ------------------------------- */
+    /* ----------------------------- Navbar ------------------------------- */
 
     #menubar ul{
         width:100%;
@@ -903,7 +976,10 @@ a{
     .footer-prod{
         border-top:1px solid var(--bs-border);
     }
-
+    /* ----------------------------- Footer ------------------------------- */
+    footer{
+        padding:50px 0;
+    }
 }
 
 /*Celulares*/
@@ -914,6 +990,7 @@ a{
     #menubar ul{
         width:100%;
         justify-content:space-between;
+        font-size:.9em;
     }
 
     /* ----------------------------- Index ------------------------------- */
@@ -988,19 +1065,13 @@ a{
         font-weight:500;
     }
     /* ----------------------------- Modal ------------------------------- */
-    .modal-fullscreen-sm-down{
+    /* .modal-fullscreen-sm-down{
         position:relative;
         left:-8px;
         top:-8px;
-    }
-    
-    .cont-modal-img{
-        width:50%;
-        height:200px;
-        margin:auto
-    }
-    .cont-modal-img img{
-        width:100%;
+    } */
+    .modal-body{
+        min-height:auto;
     }
 
     /* ----------------------------- verProducto.html ------------------------------- */
@@ -1053,6 +1124,12 @@ a{
     }
     .verProducto-enlaces .product-title h5{
         font-size:1em;
+    }
+
+
+    /* ----------------------------- Footer ------------------------------- */
+    footer{
+        padding:50px 0;
     }
 }
 
@@ -1245,9 +1322,7 @@ a{
 /*Celulares angostos*/
 @media only screen and (max-width:375px){
 
-    #menubar ul{
-        justify-content: space-between;
-    }
+   
 /* ----------------------------- Inicio ------------------------------- */
     .section-ofertas{
         margin:10px 3px;
@@ -1350,6 +1425,15 @@ a{
 }
 
 @media only screen and (max-width:330px){
+    /* ------------------------ navbar ---------------------------- */
+    #menubar{
+        max-height:70px;
+    }
+    #menubar li{
+        text-align:center;
+    }
+    /* ------------------------ Catalogo ---------------------------- */
+    
     .product .itemBox{
         width:270px;
         height:410px;
