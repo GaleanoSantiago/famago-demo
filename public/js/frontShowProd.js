@@ -63,7 +63,7 @@ const crearShowProd = (producto)=>{
                 <img src="./public/img/${producto.cimg_prod}" alt="">
             </div>
         </div>
-        <div class="col-12 col-lg-12 colo-md-12 col-sm-12 border-top cont-carac-gener">
+        <!-- <div class="col-12 col-lg-12 colo-md-12 col-sm-12 border-top cont-carac-gener">
         <h5>Caracteristicas Generales</h5>
             <div class="caract-gener">
                 <div class="scrolleable">
@@ -71,7 +71,7 @@ const crearShowProd = (producto)=>{
                     </p>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     <div class="col-12 col-lg-6 colo-md-6 col-sm-12 border-start col-cont-info">
         <div class="desc-prod">
