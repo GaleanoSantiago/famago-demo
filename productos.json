@@ -10,46 +10,46 @@
         "nprecio_descuento": "2200",
         "boferta_especial": "1",
         "dfecha_alta": "2023-03-15",
-        "rela_categoria_id": "1 "
+        "rela_categoria_id": "1"
     },
     {
         "producto_id": "2",
-        "cod_producto": "222",
+        "cod_producto": "3425",
         "cnombre_producto": "Batea vidrio curvo con puertas - 1.20 metros",
-        "cimg_prod": "2.jpg",
+        "cimg_prod": "4.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
         "nprecio": "3500",
         "nprecio_descuento": "3300",
         "boferta_especial": "1",
         "dfecha_alta": "2023-03-13",
-        "rela_categoria_id": "1"
+        "rela_categoria_id": "3"
     },{
         "producto_id": "3",
-        "cod_producto": "333",
+        "cod_producto": "11390",
         "cnombre_producto": "Exhibidora vertical - 1 puerta - 300 litros",
-        "cimg_prod": "3.jpg",
+        "cimg_prod": "2.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
         "nprecio": "7600",
-        "nprecio_descuento": "7200",
-        "boferta_especial": "1",
+        "nprecio_descuento": "0",
+        "boferta_especial": "0",
         "dfecha_alta": "2023-03-12",
         "rela_categoria_id": "2"
     },{
         "producto_id": "4",
-        "cod_producto": "444",
+        "cod_producto": "31200",
         "cnombre_producto": "Freezer tapa ciega - 295 litros",
         "cimg_prod": "56.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
-        "nprecio": "3500",
-        "nprecio_descuento": "3300",
+        "nprecio": "3200",
+        "nprecio_descuento": "2900",
         "boferta_especial": "1",
         "dfecha_alta": "2023-02-15",
-        "rela_categoria_id": "3"
+        "rela_categoria_id": "1"
     },{
         "producto_id": "5",
-        "cod_producto": "111",
+        "cod_producto": "3032",
         "cnombre_producto": "Exhibidora vertical - 1 puerta - 470 litros",
-        "cimg_prod": "5.jpg",
+        "cimg_prod": "57.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
         "nprecio": "3500",
         "nprecio_descuento": "3300",
@@ -58,26 +58,59 @@
         "rela_categoria_id": "3"
     },{
         "producto_id": "6",
-        "cod_producto": "566",
-        "cnombre_producto": "Exhibidora vertical - 1 puerta - 300 litros",
-        "cimg_prod": "5.jpg",
+        "cod_producto": "14023",
+        "cnombre_producto": "Horno pizzero Usman - 12 Pizzas - Gas Natural",
+        "cimg_prod": "58.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
-        "nprecio": "3500",
-        "nprecio_descuento": "0",
-        "boferta_especial": "0",
+        "nprecio": "8300",
+        "nprecio_descuento": "800",
+        "boferta_especial": "1",
         "dfecha_alta": "2023-03-23",
-        "rela_categoria_id": "3"
+        "rela_categoria_id": "4"
     },{
         "producto_id": "7",
-        "cod_producto": "665",
-        "cnombre_producto": "Exhibidora vertical - 1 puerta - 200 litros",
-        "cimg_prod": "5.jpg",
+        "cod_producto": "9012",
+        "cnombre_producto": "Exhibidora vertical 250 mts - Unique edition",
+        "cimg_prod": "3.jpg",
         "cdescripcion_producto": "Modelo 1200 .\r\nLargo: 1200 mm.\r\nProfundidad: 1030 mm.\r \nAlto: 1330 mm.\r\nPotencia 1\/3 HP.",
-        "nprecio": "4500",
+        "nprecio": "3200",
         "nprecio_descuento": "0",
         "boferta_especial": "0",
-        "dfecha_alta": "2023-03-23",
+        "dfecha_alta": "2023-03-24",
         "rela_categoria_id": "3"
+    },{
+        "producto_id": "8",
+        "cod_producto": "12000",
+        "cnombre_producto": "Libro de Magia",
+        "cimg_prod": "61.jpg",
+        "cdescripcion_producto": "Tapa Negra\r\nNigromancia",
+        "nprecio": "2300",
+        "nprecio_descuento": "0",
+        "boferta_especial": "0",
+        "dfecha_alta": "2023-03-24",
+        "rela_categoria_id": "8"
+    },{
+        "producto_id": "9",
+        "cod_producto": "12909",
+        "cnombre_producto": "Baraja Bicylce",
+        "cimg_prod": "62.webp",
+        "cdescripcion_producto": "",
+        "nprecio": "4000",
+        "nprecio_descuento": "3800",
+        "boferta_especial": "1",
+        "dfecha_alta": "2023-03-25",
+        "rela_categoria_id": "8"
+    },{
+        "producto_id": "10",
+        "cod_producto": "1999",
+        "cnombre_producto": "La Biblia Parte 2",
+        "cimg_prod": "62.jpg",
+        "cdescripcion_producto": "",
+        "nprecio": "30000",
+        "nprecio_descuento": "0",
+        "boferta_especial": "0",
+        "dfecha_alta": "2023-03-26",
+        "rela_categoria_id": "8"
     }
 
 ]
