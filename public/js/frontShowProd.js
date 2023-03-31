@@ -35,17 +35,21 @@ const obtenerProductos = async (idGet) => {
   // Producto por id
   const producto = productos.find((producto) => producto.producto_id === idGet);
 
-  // Productos de la misma categoria
-  const productosCategoria = productos.filter(function (prod) {
+// Productos de la misma categoria
+  if(producto != undefined){
+    const productosCategoria = productos.filter(function (prod) {
       return prod.rela_categoria_id === producto.rela_categoria_id;
-  });
-  productosCategoria.splice(10);
-//   console.log(productosCategoria);
+    });
+  
+    productosCategoria.splice(10);
+
+    crearItemBoxs(productosCategoria);
+	}
+
   //LLamando a la funcion para crear el Show Product 
   crearShowProd(producto);
 
-  crearItemBoxs(productosCategoria);
-}
+ }
 
 obtenerProductos(idGet);
 
