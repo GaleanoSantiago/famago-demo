@@ -71,7 +71,7 @@ const crearShowProd = (producto)=>{
         <h5>Caracteristicas Generales</h5>
             <div class="caract-gener">
                 <div class="scrolleable">
-                    <p>${producto.ccaracter_generales.replace(/\r\n/g, "\n").replace(/\r/g, "\n").replace(/\n/g, "<br>")}
+                    <p>
                     </p>
                 </div>
             </div>
