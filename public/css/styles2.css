@@ -307,6 +307,11 @@ section{
     color:var(--bs-white);
 
 }
+
+.text-fecha-oferta h4{
+    color:var(--redSound);
+}
+
 /* ------------------------- Seccion de productos ----------------------------- */
 
 /* .product-title{
@@ -583,10 +588,10 @@ a{
 .show-img img{
     width:60%;
 }
-/* 
+ 
 .section-ver-producto{
-    margin-top:50px;
-} */
+    padding:10px 0;
+}
 
 .contenedor-producto{
     background-color: var(--bs-white);
@@ -1045,7 +1050,9 @@ footer a:hover{
     .text-oferta a{
         align-self: center;
     }
-
+    .text-fecha-oferta h4{
+        font-size:1.2em;
+    }
     .product .itemBox .image .imgs {
         height:57%;
     }
@@ -1300,7 +1307,9 @@ footer a:hover{
     .product-title h3{
         font-size:1.4em;
     }
-
+    .text-fecha-oferta h4{
+        font-size:1em;
+    }
     .product .itemBox .image .oferta{
         
         top:-44px;
@@ -1363,7 +1372,9 @@ footer a:hover{
     .product-title h3{
         font-size:1em;
     }
-
+    .text-fecha-oferta h4{
+        font-size:.92em;
+    }
     .product{
         gap:5px;
     }
