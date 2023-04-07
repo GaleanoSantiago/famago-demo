@@ -126,7 +126,7 @@ const crearItemBoxs = (productosEnOferta)=>{
                     </div>` : ``}
                   
                     <div class="imgs">
-                        <img src="./public/img/${prod.cimg_prod}" alt="${prod.cnombre_producto}">
+                        <img src="./public/img/${prod.cimg_prod}" alt="${prod.cnombre_producto}" loading="lazy">
                     </div>
                     <div class="tag-cod">
                         <span>Cod: ${prod.cod_producto}</span>
