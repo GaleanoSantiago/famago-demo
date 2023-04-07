@@ -122,7 +122,8 @@ section{
     left:0;
     top:0;
     width:100%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); */
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 15%), 0 4px 10px 0 rgb(0 0 0 / 15%);
     z-index:99;
 }
 #menubar li a{
@@ -193,7 +194,7 @@ section{
     background: var(--gradient-1);
     border-radius: 40px;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
-
+    padding:10px 0; 
 }
 .cod-prod-globo{
     font-size:1.1em;
@@ -213,14 +214,23 @@ section{
 }
 .prod-oferta{
     /* border:1px solid red; */
-    padding:20px;
+    /* padding:0 20px; */
+    width:60%;
+    height:350px;
     display:flex;
     justify-content:center;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
+
 }
 .prod-oferta img{
-    width:80%;
-    box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
-    border-radius:10px;
+    width:100%;
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Alto de la imagen al 100% del contenedor */
+    object-position: center -150px; /* Centrar la imagen en el contenedor */
+    /* border-radius:10px; */
 }
 .text-oferta{
     padding:30px 20px;
@@ -413,7 +423,7 @@ section .items span.active{
 .product .itemBox{
     position:relative;
     width:270px;
-    height:430px;
+    height:470px;
     margin:10px;
     display:block;
     transition:all .4s;
@@ -481,9 +491,9 @@ section .items span.active{
     height:100%;
     aspect-ratio:1/1;
     object-fit:cover;
-    object-position: center;
+    object-position: center -120px;
     transition:all .4s ease;
-
+    margin:auto;
 }
 .product .itemBox:hover .imgs img{
     transform:scale(1.05);
@@ -502,7 +512,7 @@ section .items span.active{
 }
 .product .itemBox .image .image-body{
     padding:10px 5px;
-    height:53%;
+    height:43%;
 
 } 
 
@@ -589,27 +599,25 @@ a{
     width:60%;
 }
  
-.section-ver-producto{
+/* .section-ver-producto{
     padding:10px 0;
-}
+} */
 
 .contenedor-producto{
     background-color: var(--bs-white);
     /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
     box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 15px ;
     border-radius: 10px;
-
-
 }
 .contenedor-img-prod{
     overflow:hidden;
-    height:500px;
+    height:550px;
     display:flex;
     justify-content:center;
     align-items: center;
 }
 .contenedor-img-prod img{
-    width:100%;
+    width:85%;
 }
 
 .desc-prod{
@@ -828,15 +836,46 @@ footer a:hover{
 
 /* Escritorio pantalla grande */
 @media only screen and (min-width: 1400px){
+
+
+    .prod-oferta{
+        width:60%;
+        height:400px;
+    }
+    .prod-oferta img{
+        object-position: center -170px; 
+    }
+
     /* ----------------------------- show producto ------------------------------- */
 
     .contenedor-img-prod img{
-        width:80%;
+        width:70%;
     }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /* ----------------------------- Index ------------------------------- */
+
+    .prod-oferta{
+        height: 300px;
+        width: 65%;
+    }
+    .prod-oferta img{
+        object-position: center -140px; 
+    }
+}
+
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px){
 /* ----------------------------- Index ------------------------------- */
+
+    .prod-oferta{
+        height: 300px;
+        width: 75%;
+    }
+    .prod-oferta img{
+        object-position: center -100px; 
+    }
 
     .card-text-oferta{
         padding: 10px 20px;       
@@ -855,14 +894,14 @@ footer a:hover{
     }
 /* ----------------------------- verProducto.html ------------------------------- */
     .contenedor-img-prod{
-        height:auto;
+        height:500px;
     }
     .contenedor-img-prod img{
-        width:50%;
+        width:60%;
     }
     
     .desc-prod-scrll{
-        height:200px;
+        height:100px;
     }
     .desc-prod{
         border-top:1px solid var(--bs-border);
@@ -891,10 +930,11 @@ footer a:hover{
     /* ----------------------------- Index ------------------------------- */
 
     .prod-oferta{
-        padding:10px;
+        height: 250px;
+        width: 90%;
     }
     .prod-oferta img{
-        width:100%;
+        object-position: center -90px; 
     }
     .card-text-oferta{
         padding: 10px;       
@@ -907,7 +947,7 @@ footer a:hover{
 
     .product .itemBox{
         width:250px;
-        height:430px;
+        height:470px;
         margin:5px;
         overflow:hidden;
     }
@@ -955,17 +995,17 @@ footer a:hover{
         padding-top:20px;
     }
     .contenedor-img-prod{
-        height:auto;
+        height:400px;
     }
     .contenedor-img-prod img{
-        width:50%;
+        width:65%;
     }
     .desc-prod{
         padding:15px;
     }
     
     .desc-prod-scrll{
-        height:200px;
+        height:100px;
     }
     .footer-prod{
         padding:15px;
@@ -1006,10 +1046,11 @@ footer a:hover{
         padding-bottom:20px;
     }
     .prod-oferta{
-        padding:10px;
+        height: 250px;
+        width: 90%;
     }
     .prod-oferta img{
-        width:90%;
+        object-position: center -100px; 
     }
     .card-text-oferta{
         padding: 10px;       
@@ -1022,7 +1063,7 @@ footer a:hover{
 
     .product .itemBox{
         width:250px;
-        height:430px;
+        height:470px;
         margin:5px;
         overflow:hidden;
     }
@@ -1092,17 +1133,17 @@ footer a:hover{
         padding-top:10px;
     } 
     .contenedor-img-prod{
-        height:auto;
+        height:350px;
     }
     .contenedor-img-prod img{
-        width:60%;
+        width:50%;
     }
     .desc-prod{
         height:auto;
         padding:15px;
     }
     .desc-prod-scrll{
-        height:200px;
+        height:100px;
     }
     .desc-prod{
         border-top:1px solid var(--bs-border);
@@ -1156,8 +1197,12 @@ footer a:hover{
         padding:0;
     }
 
-    .prod-oferta img{
+    .prod-oferta{
         width:200px;
+        height: 250px;
+    }
+    .prod-oferta img{
+        object-position: center -70px; 
     }
     .card-text-oferta{
         padding: 10px;       
@@ -1189,7 +1234,7 @@ footer a:hover{
 
     .product .itemBox{
         width:46%;
-        height:380px;
+        height:400px;
         margin:5px;
     }
 
@@ -1198,7 +1243,9 @@ footer a:hover{
         width:100%;
         height:55%;
     }
-        
+    .imgs img{
+        object-position: center -80px;
+    }
         
     .product .itemBox .image .image-body{
         padding:5px;
@@ -1288,10 +1335,14 @@ footer a:hover{
 @media only screen and (max-width:425px){
 /* ----------------------------- Ininio ------------------------------- */
     
-    .prod-oferta img{
-        width:180px;
-    }
     
+    .prod-oferta{
+        width:180px;
+        height: 230px;
+    }
+    .prod-oferta img{
+        object-position: center -60px; 
+    }
     .text-oferta h1{
         font-size:1.4em;
         font-weight: 700;
@@ -1323,20 +1374,12 @@ footer a:hover{
     }
 
     .product .itemBox{
-        /* width:46%; */
-        height:380px;
+        height:400px;
         margin:5px;
     }
-    /* .product .itemBox .image .imgs { 
-        height:55%;
+    .imgs img{
+        object-position: center -70px;
     }
-    .product .itemBox .image .image-body{
-        /* padding:5px; */
-        /* height:55%; */
-        
-    /* }  */
-
-
     .verProducto-enlaces .product-title h3{
         font-size:1em;
     
@@ -1345,6 +1388,12 @@ footer a:hover{
         font-size:.9em;
     
     } 
+
+/* ----------------------------- verProducto.html ------------------------------- */
+
+    .contenedor-img-prod img{
+        width:70%;
+    }
 }
 
 /*Celulares angostos*/
@@ -1380,7 +1429,7 @@ footer a:hover{
     }
     .product .itemBox{
         width:49%;
-        height:360px;
+        height:390px;
         margin:0;
         /* overflow:auto; */
     }
@@ -1397,10 +1446,13 @@ footer a:hover{
         font-size:1.2em;
         font-weight: 700;
     }
-    .prod-oferta img{
+    .prod-oferta{
         width:160px;
+        height: 200px;
     }
-
+    .prod-oferta img{
+        object-position: center -60px; 
+    }
     .col-precios-cards{
         /* width:100%; */
         transform:translateX(0);
@@ -1425,7 +1477,7 @@ footer a:hover{
     /* ----------------------------- verProducto.html ------------------------------- */
 
     .contenedor-img-prod img{
-        width:70%;
+        width:80%;
     }
 
     .cont-carac-gener h5{
@@ -1436,9 +1488,6 @@ footer a:hover{
     }
     .desc-prod h5{
         font-size:1em;
-    }
-    .desc-prod-scrll{
-        height:150px;
     }
     .footer-prod>span{
         font-size:1em;
@@ -1462,11 +1511,21 @@ footer a:hover{
     #menubar li{
         text-align:center;
     }
+    /* ------------------------ index ---------------------------- */
+    .prod-oferta{
+        width:180px;
+        height: 180px;
+    }
+    .prod-oferta img{
+        object-position: center -50px;
+        width:140%;
+        height:140%; 
+    }
     /* ------------------------ Catalogo ---------------------------- */
     
     .product .itemBox{
         width:270px;
-        height:410px;
+        height:430px;
     }
     .product .itemBox .image .oferta{
         
@@ -1479,6 +1538,9 @@ footer a:hover{
     }
     .product .itemBox .image .imgs {
         height:55%;
+    }
+    .imgs img{
+        object-position: center -150px; 
     }
     .product .itemBox .image .image-body{
         padding:10px 5px;
