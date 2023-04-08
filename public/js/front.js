@@ -90,7 +90,7 @@ const crearGloboOferta = (maxProd)=>{
           </p>
           <div class="btns-oferta">
             <a href="./verProducto.html?id=${maxProd.producto_id}" class="btn-prod btn-oferta">Ver Producto</a>
-            <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+el+producto:+${maxProd.cnombre_producto}+-+CODIGO+${maxProd.cod_producto}" target="_blank" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp"></span>Consultar</a>
+            <a href="https://wa.me/5493704777124?text=Hola,+me+interesa+el+producto:+${maxProd.cnombre_producto}+-+CODIGO+${maxProd.cod_producto}" target="_blank" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp"></span>Consultar</a>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ const crearItemBoxs = (productosEnOferta)=>{
                             </div>
                             <div class="col-12 col-btns-cards">
                             <a href="./verProducto.html?id=${prod.producto_id}" title="Ver Informacion del Producto" class="btn-prod text-center" >Ver Producto</a>
-                            <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+el+producto:+${prod.cnombre_producto}+-+CODIGO+${prod.cod_producto}" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta" target="_blank"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
+                            <a href="https://wa.me/5493704777124?text=Hola,+me+interesa+el+producto:+${prod.cnombre_producto}+-+CODIGO+${prod.cod_producto}" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta" target="_blank"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
                             </div>
                             
                         </div>
