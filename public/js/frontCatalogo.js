@@ -76,7 +76,7 @@ const crearItemBoxs = (productos)=>{
                               </div>
                               <div class="col-12 col-btns-cards">
                               <a href="./verProducto.html?id=${prod.producto_id}" title="Ver Informacion del Producto" class="btn-prod text-center">Ver Producto</a>
-                              <a href="https://wa.me/5493704777124?text=Hola,+me+interesa+el+producto:+${prod.cnombre_producto}+-+CODIGO+${prod.cod_producto}" target="_blank" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
+                              <a href="https://wa.me/5493704073147?text=Hola,+me+interesa+el+producto:+${prod.cnombre_producto}+-+CODIGO+${prod.cod_producto}" target="_blank" title="Preguntar por WhatsApp" class="btn-oferta btn-wa-oferta"><span class="fa fa-whatsapp text-light"></span>Consultar</a>
                               </div>
                               
                           </div>
